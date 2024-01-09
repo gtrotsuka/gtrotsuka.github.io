@@ -55,21 +55,16 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date">August 2023 - December 2023</span>
-									<h2><a href="#">Warehouse Simulation:<br />
+									<h2><a href="#">Image Recognition:<br />
 									Python Project</a></h2>
-									<p>Implementing a frontier-based exploration and a marker collection stage with a callibrated PID controller</p>
+									<p>Utilizing RANSAC and a Canny edge detector to take grayscale images taken from a Cozmo robot and comparing it to 7 predetermined images and a "None of the above" category</p>
 
 								<a href="#" class="image main"><img src="images/warehouse_thumb.PNG" alt="" /></a>
-									<h3>Warehouse Simulation Frontier Exploration: </h3>
-									<p style = "text-align:left;">This project was split into 2 parts. The first was a frontier-based
-										exploration process where the robot tries to explore its suroundings to find markers. In real life, 
-										the markers would have been packages. The robot uses RRT and a frontier calculation to explore unexplored cells 
-										until all of the markers have been found<br /></p>
-									<h3>Warehouse Simulation Marker Collection: <br /></h3>
-									<p style = "text-align:left;">In the second part of the project, the robot has full knowledge of the markers 
-									from the previous part. To collect a marker, the robot travels to the marker and needs to have a specific orientation 
-								in order to be able to pick up the marker. The algorithm takes the closest marker and utilizes RRT to path plan around 
-							obstacles and collect markers. It iterates through the markers until all markers are collected.</p>
+									<h3>Image Recognition Project: </h3>
+									<p style = "text-align:left;">Utilizing a training set and wall data, I created an image classification utilized for 
+                                        differentiating between 7 images and a "none of the above" category. The main tools created were a Canny 
+                                        edge detector and RANSAC. The image below is a method for extracting the image features that was utilized as a 
+                                        part of the project.<br /></p>
 									<h3>Skills</h4>
 									<ul style = "list-style-type:square">
 										<li style = "text-align:left">Python</li>
@@ -77,7 +72,7 @@
 										<li style = "text-align:left">Path Planning</li>
 										<li style = "text-align:left">RRT</li>
 									</header>
-									<a class="image fit"><img src="images/warehouse_frontier.PNG" alt="" /></a>
+									<a class="image fit"><img src="images/image_extract_features.PNG" alt="" /></a>
 							</article>
 
 						<!-- Posts -->
