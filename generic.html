@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>Ryan Otsuka</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,51 +15,164 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Ryan<br />
+						Otsuka</h1>
+						<p>A junior Computer science Student at Georgia Institute of Technology<br />
+						Ready to pursue real-world challenges and explore ways to support the universe</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Ryan</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">This is Massively</a></li>
-							<li class="active"><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li><a href="index.html">Projects</a></li>
+							<li class ="active"><a href="generic.html">Research</a></li>
+							<!-- <li><a href="elements.html">Timeline</a></li> -->
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/gtryan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/gtrotsuka" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/rotsuka_04/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Post -->
-							<section class="post">
+						<!-- Featured Post -->
+							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<span class="date">August 2023 - Present</span>
+									<h2><a href="mcts.html">MCTS Flight Simulation Research<br />
+									</a></h2>
+									<p>Working with 6DOF and JSBsim to simulate F16 planes and compare planes running 
+										MCTS with planes running a pure pursuit algorithm.
+									</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<a href="mcts.html" class="image main"><img src="images/pic011.PNG" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="mcts.html" class="button large">Full Story</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">August 2023 - December 2023</span>
+										<h2><a href="particle.html">Particle Filter Research<br />
+										</a></h2>
+									</header>
+									<a href="particle.html" class="image fit"><img src="images/pic021.PNG" alt="" /></a>
+									<p>Takes a robot odometry measurement as a motion control input and a marker measurement as a sensor input. 
+										Took 5000 particles as the filter to try and find the global optimal estimation.
+									</p>
+									<ul class="actions special">
+										<li><a href="particle.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">August 2023 - December 2023</span>
+										<h2><a href="pid.html">PID Controller Research<br />
+										</a></h2>
+									</header>
+									<a href="pid.html" class="image fit"><img src="images/pic031.PNG" alt="" /></a>
+									<p>Tuning a linear and angular PID controller that is suitable for a robot driving along a thin icy path. 
+										I looked into certain parameters and stopping algorithms to prevent a robot from sliding off the icy road.	
+									</p>
+									<ul class="actions special">
+										<li><a href="pid.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">August 2023 - December 2023</span>
+										<h2><a href="rrt.html">RRT Planning Simulation<br />
+										</h2>
+									</header>
+									<a href="rrt.html" class="image fit"><img src="images/pic041.jpg" alt="" /></a>
+									<p>Designing a node generator to navigate a robot through a series of obstacles in real time with RRT. 
+										Path smoothing was also made to reduce the number of nodes between the start node and the end node.
+									</p>
+									<ul class="actions special">
+										<li><a href="rrt.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<!-- <article> -->
+									<!-- <header>
+										<span class="date">August 2022 - Present</span>
+										<h2><a href="solar.html">Controller for Motor Controller Circuit Board:<br />
+										Solar Racing</a></h2>
+									</header>
+									<a href="solar.html" class="image fit"><img src="images/pic051.jpg" alt="" /></a>
+									<p>A solar-powered car meant to travel the country. This amazing vehicle is engineered to be energy efficient vehicle in the Solar Car Competition</p>
+									<ul class="actions special">
+										<li><a href="solar.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">August 2022 - Present</span>
+										<h2><a href="hyperloop.html">Battery Management System & Ground Control:<br />
+										GT Hyperloop</a></h2>
+									</header>
+									<a href="hyperloop.html" class="image fit"><img src="images/pic061.PNG" alt="" /></a>
+									<p>Once imagined by Elon Musk, this team is now working to make this image a reality.
+										Competing against teams around the world, these pods, racing through near-vacuum tunnels, make strides in transportation.</p>
+									<ul class="actions special">
+										<li><a href="hyperloop.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">August 2022 - May 2023</span>
+										<h2><a href="gtxr.html">Kendeda AR Development:<br />
+										Georgia Tech Extended Reality</a></h2>
+									</header>
+									<a href="gtxr.html" class="image fit"><img src="images/pic071.jpg" alt="" /></a>
+									<p>Augmented Reality is a really cool real world experience as it meshes technology and real life. I worked on an AR interactive experience in our
+										school's Kendeda building
+									</p>
+									<ul class="actions special">
+										<li><a href="gtxr.html" class="button">Full Story</a></li>
+									</ul>
+								</article> -->
+
 							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+									<a href="page2.html" class="page">2</a>
+									<!--<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>-->
+								</div>
+							</footer>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
+						<!-- <section>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field">
@@ -76,31 +189,30 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Does Not Work Yet" /></li>
 								</ul>
 							</form>
-						</section>
+						</section> -->
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<p>Seal Beach, CA<br />
+								90740</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p><a href="#">(562) 330-3260</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="#">otsukaryan@gmail.com</a></p>
 							</section>
 							<section>
-								<h3>Social</h3>
+							<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/gtryan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/gtrotsuka" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/rotsuka_04/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -108,7 +220,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Ryan Otsuka</li><li><a href="#"></a></li></ul>
 					</div>
 
 			</div>
