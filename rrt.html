@@ -55,22 +55,26 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date">August 2023 - December 2023</span>
-									<h2><a href="#">PID Controller Research<br />
+									<h2><a href="#">RRT Planning Simulation<br />
 									</a></h2>
-									<p>Tuning a linear and angular PID controller that is suitable for a robot driving along a thin icy path. 
-										I looked into certain parameters and stopping algorithms to prevent a robot from sliding off the icy road.</p>
+									<p>Designing a node generator to navigate a robot through a series of obstacles in real time with RRT. 
+										Path smoothing was also made to reduce the number of nodes between the start node and the end node.</p>
 
-								<a href="#" class="image main"><img src="images/pid_thumb.PNG" alt="" /></a>
-									<h3>PID Research Overview</h3>
-									<p style = "text-align:left;">On top of learning the ins and outs of PID, I applied it to a unique scneario where a robot will slide on an icy road 
-                                        despite having non-moving wheels. I researched a way of fine-tuning the way the robot stops by accounting for the distance it is from a target and 
-                                        then reversing the wheel inputs while accounting for random noise until it comes to a complete stop. There are also scenarios created where a strong wind 
-                                        impacts the robot and the PID control counteracts it.<br /></p>
+								<a href="#" class="image main"><img src="images/rrt_thumb.PNG" alt="" /></a>
+									<h3>RRT Research Overview</h3>
+									<p style = "text-align:left;">Creating a node generator in order to research how created randomly generated nodes can create a path for a robot to navigate 
+                                        around obstacles and walls. Essentially, RRT was created to help a robot of length 0.5m in order to navigate a course from start to end.<br /></p>
+									<h3>Improving the model</h4>
+                                        <p style = "text-align:left;">To improve the model, path smoothing was created, which is a way for the algorithm to reduce the number of nodes on the path. 
+                                            It removes complexity and created a quicker path for the robot to get from start to finish. I researched an algorithm that takes spaced nodes that have few children, 
+                                            representing an area with few obstacles. It tries to connect distant nodes that do not collide with an obstacle, and the process repeats while also testing the more 
+                                            dense nodes with nodes that are not as far apart to see if more nodes can be connected.<br /></p>
 									<ul style = "list-style-type:square">
 										<li style = "text-align:left">Python</li>
-										<li style = "text-align:left">PID</li>
+										<li style = "text-align:left">RRT</li>
+                                        <li style = "text-align:left">Path Planning</li>
 									</header>
-									<a class="image fit"><img src="images/pid_straight.PNG" alt="" /></a>
+									<a class="image fit"><img src="images/rrt_path.PNG" alt="" /></a>
 							</article>
 
 						<!-- Posts -->
