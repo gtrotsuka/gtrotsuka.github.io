@@ -1,234 +1,360 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ryan Otsuka</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Otsuka | Orbital Portfolio</title>
+  <meta
+    name="description"
+    content="Ryan Otsuka is a Georgia Tech CS master's student building software for robotics, media systems, interactive tools, and teaching support."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <div class="cosmos" aria-hidden="true">
+    <div class="cosmos__gradient"></div>
+    <div class="cosmos__stars cosmos__stars--near"></div>
+    <div class="cosmos__stars cosmos__stars--far"></div>
+    <div class="cosmos__grid"></div>
+    <div class="cosmos__orbits"></div>
+  </div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Ryan<br />
-						Otsuka</h1>
-						<p>A Masters Student in Computer Science at Georgia Institute of Technology<br />
-						Ready to pursue real-world challenges and explore ways to support the universe</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Ryan Otsuka home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Ryan Otsuka</span>
+      </a>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Ryan</a>
-					</header>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="generic.html">Research</a></li>
-							<!-- <li><a href="elements.html">Timeline</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/gtryan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/gtrotsuka" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.instagram.com/rotsuka_04/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      <div class="nav-menu" id="nav-menu">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-						</ul>
-					</nav>
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="shell hero-layout">
+        <div class="hero-copy reveal">
+          <p class="section-code">LAUNCH / MISSION INTRO</p>
+          <h1>Ryan Otsuka</h1>
+          <p class="hero-lead">
+            Software engineer building reliable systems for robotics, media, and interactive tools.
+          </p>
+          <p class="hero-subtext">
+            I work across C++/Qt, robotics software, autonomy tools, web systems, and teaching.
+            Most of my work sits between low-level systems and the people operating them.
+          </p>
 
-				<!-- Main -->
-					<div id="main">
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#experience">View Experience</a>
+            <a class="button button-ghost" href="https://github.com/gtrotsuka" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/gtryan/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">August 2022 - Present</span>
-									<h2><a href="yjsp.html">Bang Bang Controller Module:<br />
-									Yellow Jacket Space Program</a></h2>
-									<p>The unexplored aspect of space is what makes it interesting.
-										To support my ambition, I am working on the bang bang controller
-										module for Georgia Tech’s Space program working on becoming the
-										first collegiate branch to make a liquid fueled rocket reach space.</p>
-								</header>
-								<a href="yjsp.html" class="image main"><img src="images/pic011.PNG" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="yjsp.html" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+          <div class="hero-notes">
+            <div class="signal-chip">C++ / Qt</div>
+            <div class="signal-chip">Robotics</div>
+            <div class="signal-chip">Teaching</div>
+            <div class="signal-chip">Interactive Systems</div>
+          </div>
+        </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">August 2022 - May 2023</span>
-										<h2><a href="robonav.html">Mars Rover Software Development:<br />
-										Georgia Tech Robojackets</a></h2>
-									</header>
-									<a href="robonav.html" class="image fit"><img src="images/pic021.PNG" alt="" /></a>
-									<p>I serve as a software team member on Georgia Tech’s Robojackets Robonav subteam. This team competes in the University Rover Challenge,
-										and I am worked on the rover arm elements for the team.</p>
-									<ul class="actions special">
-										<li><a href="robonav.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">August 2023 - December 2023</span>
-										<h2><a href="#">Warehouse Simulation:<br />
-										Python Project</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/warehouse_thumb.PNG" alt="" /></a>
-									<p>Implementing a frontier-based exploration and a marker collection stage with a callibrated PID controller</p>
-									<ul class="actions special">
-										<li><a href="warehouse_sim.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">August 2022 - Present</span>
-										<h2><a href="marine.html">LIDAR, IMU, and GPS Data Processing:<br />
-										Marine Robotics</a></h2>
-									</header>
-									<a href="marine.html" class="image fit"><img src="images/pic041.jpg" alt="" /></a>
-									<p>Autonomous boats are so cool! This competition-ready boat takes in its surroundings using LIDAR to process automated
-										commands and complete tasks like proceeding through buoys. </p>
-									<ul class="actions special">
-										<li><a href="marine.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">August 2022 - Present</span>
-										<h2><a href="solar.html">Controller for Motor Controller Circuit Board:<br />
-										Solar Racing</a></h2>
-									</header>
-									<a href="solar.html" class="image fit"><img src="images/pic051.jpg" alt="" /></a>
-									<p>A solar-powered car meant to travel the country. This amazing vehicle is engineered to be energy efficient vehicle in the Solar Car Competition</p>
-									<ul class="actions special">
-										<li><a href="solar.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">August 2022 - Present</span>
-										<h2><a href="hyperloop.html">Battery Management System & Ground Control:<br />
-										GT Hyperloop</a></h2>
-									</header>
-									<a href="hyperloop.html" class="image fit"><img src="images/pic061.PNG" alt="" /></a>
-									<p>Once imagined by Elon Musk, this team is now working to make this image a reality.
-										Competing against teams around the world, these pods, racing through near-vacuum tunnels, make strides in transportation.</p>
-									<ul class="actions special">
-										<li><a href="hyperloop.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">August 2023 - December 2023</span>
-										<h2><a href="#">Ramen Go:<br />
-										Full-Stack Web Development</a></h2>
-										<p>Collaborating on a web recreation of the card game, Sushi Go.<br />
-										</p>
-									</header>
-									<a href="sushi.html" class="image main"><img src="images/sushi_thumb.PNG" alt="" /></a>
-									<ul class="actions special">
-										<li><a href="#" class="button large">Full Story</a></li>
-									</ul>
-								</article>
+        <aside class="hero-display reveal" aria-label="Mission display">
+          <div class="hero-display__frame">
+            <div class="hero-display__ticks" aria-hidden="true"></div>
+            <div class="hero-display__header">
+              <p class="hero-display__label">Mission display</p>
+              <span>Orbital focus map</span>
+            </div>
 
-							</section>
+            <div class="hero-display__orbital" aria-hidden="true">
+              <div class="hero-display__core">
+                <div class="core-rings">
+                  <span class="core-ring core-ring--one"></span>
+                  <span class="core-ring core-ring--two"></span>
+                  <span class="core-ring core-ring--three"></span>
+                </div>
+                <div class="core-planet"></div>
+                <div class="axis axis--x"></div>
+                <div class="axis axis--y"></div>
+              </div>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="page2.html" class="page">2</a>
-									<!--<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>-->
-								</div>
-							</footer>
+              <div class="focus-tag focus-tag--north">
+                <div class="focus-tag__inner">
+                  <strong>Robotics</strong>
+                  <span>Perception, planning, control</span>
+                </div>
+              </div>
+              <div class="focus-tag focus-tag--east">
+                <div class="focus-tag__inner">
+                  <strong>C++ / Qt</strong>
+                  <span>Desktop and embedded-adjacent systems</span>
+                </div>
+              </div>
+              <div class="focus-tag focus-tag--south">
+                <div class="focus-tag__inner">
+                  <strong>Teaching</strong>
+                  <span>Course systems and support</span>
+                </div>
+              </div>
+              <div class="focus-tag focus-tag--west">
+                <div class="focus-tag__inner">
+                  <strong>Web</strong>
+                  <span>Interfaces that explain themselves</span>
+                </div>
+              </div>
+            </div>
 
-					</div>
+            <div class="hero-display__readout">
+              <div>
+                <span>Current orbit</span>
+                <strong>Georgia Tech MSCS</strong>
+              </div>
+              <div>
+                <span>Primary track</span>
+                <strong>Robotics + software systems</strong>
+              </div>
+              <div>
+                <span>Open channel</span>
+                <strong>Collaboration welcome</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Does Not Work Yet" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Seal Beach, CA<br />
-								90740</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(562) 330-3260</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">otsukaryan@gmail.com</a></p>
-							</section>
-							<section>
-							<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/gtryan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/gtrotsuka" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.instagram.com/rotsuka_04/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    <section class="section" id="about">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-code">ABOUT / SYSTEM PROFILE</p>
+          <h2>A software profile shaped by robotics, interfaces, and operating real systems.</h2>
+        </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Ryan Otsuka</li><li><a href="#"></a></li></ul>
-					</div>
+        <div class="about-layout">
+          <div class="about-copy reveal">
+            <p>
+              I&rsquo;m a CS master&rsquo;s student at Georgia Tech interested in robotics, interactive systems,
+              and software that makes complicated systems easier to use. I like building tools that behave
+              predictably, explain themselves clearly, and still feel good to work with.
+            </p>
+            <p>
+              That usually means sitting somewhere between low-level engineering and the people using the
+              system: C++ and Qt applications, autonomy tooling, data-processing workflows, web interfaces,
+              and teaching infrastructure that helps students get unstuck.
+            </p>
+          </div>
 
-			</div>
+          <aside class="profile-panel reveal" aria-label="Current orbit">
+            <div class="profile-panel__header">
+              <p class="profile-panel__label">Current orbit</p>
+              <span>System dossier</span>
+            </div>
+            <div class="profile-panel__grid" aria-hidden="true"></div>
+            <ul class="profile-list">
+              <li>Georgia Tech CS master&rsquo;s student</li>
+              <li>Robotics + software systems</li>
+              <li>CS 1100 Head TA</li>
+              <li>Interested in autonomy, HCI, creative tools, and dependable software</li>
+            </ul>
+            <div class="hero-notes hero-notes--tight">
+              <div class="signal-chip">C++ / Qt</div>
+              <div class="signal-chip">Robotics</div>
+              <div class="signal-chip">Teaching</div>
+              <div class="signal-chip">Interactive Systems</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="constellation-divider constellation-divider--experience shell" aria-hidden="true"></div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <section class="section" id="experience">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-code">EXPERIENCE / FLIGHT LOG</p>
+          <h2>A running log of software, teaching, and autonomy work.</h2>
+          <p class="section-intro">
+            The throughline is pretty consistent: build systems that are easier to operate, easier to reason about,
+            and better aligned with the people using them.
+          </p>
+        </div>
 
-	</body>
+        <div class="orbit-log reveal">
+          <div class="orbit-log__header">
+            <div>
+              <p class="orbit-log__label">Orbital view</p>
+              <h3>Flight log orbit</h3>
+            </div>
+            <div class="orbit-log__controls">
+              <button class="orbit-arrow" type="button" id="experience-prev" aria-label="Show previous experience">←</button>
+              <button class="orbit-arrow" type="button" id="experience-next" aria-label="Show next experience">→</button>
+            </div>
+          </div>
+
+          <div class="orbit-log__sun" id="orbit-sun" aria-hidden="true"></div>
+          <div class="orbit-log__arc orbit-log__arc--one" aria-hidden="true"></div>
+          <div class="orbit-log__arc orbit-log__arc--two" aria-hidden="true"></div>
+          <div class="orbit-log__rail" id="experience-rail" aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="constellation-divider shell" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-code">PROJECTS / CONSTELLATION ARCHIVE</p>
+          <h2>A project archive built for scanning, selecting, and digging deeper.</h2>
+          <p class="section-intro">
+            These are the projects that best show how I work: robotics software, systems thinking,
+            teaching infrastructure, and tools that make complicated things easier to use.
+          </p>
+        </div>
+
+        <div class="featured-header reveal">
+          <div>
+            <p class="featured-header__label">Selected missions</p>
+            <h3>Mission highlights</h3>
+          </div>
+        </div>
+        <div class="featured-stack" id="featured-stack" aria-live="polite"></div>
+
+        <div class="constellation-shell reveal">
+          <div class="constellation-shell__header">
+            <div>
+              <p class="featured-header__label">Interactive archive</p>
+              <h3>Project constellation</h3>
+            </div>
+            <div class="constellation-shell__actions">
+              <button class="button button-secondary button-small" type="button" id="constellation-back" hidden>Back to categories</button>
+              <button class="button button-ghost button-small" type="button" id="projects-grid-toggle">View all projects</button>
+            </div>
+          </div>
+
+          <div class="constellation-breadcrumb" id="constellation-breadcrumb" aria-live="polite">Projects / Categories</div>
+
+          <div class="constellation-board" id="constellation-board" aria-live="polite">
+            <svg class="constellation-svg" id="constellation-svg" viewBox="0 0 1200 720" aria-hidden="true"></svg>
+            <div class="constellation-overlay" id="constellation-overlay"></div>
+          </div>
+
+          <aside class="constellation-detail" id="constellation-detail" hidden>
+            <div class="constellation-detail__header">
+              <p class="featured-header__label">Mission detail</p>
+              <button class="detail-close" type="button" id="detail-close" aria-label="Close project detail">×</button>
+            </div>
+            <div id="constellation-detail-body"></div>
+          </aside>
+        </div>
+
+        <div class="projects-grid-panel reveal" id="projects-grid-panel" hidden>
+          <div class="projects-grid-panel__header">
+            <div>
+              <p class="featured-header__label">Complete archive</p>
+              <h3>All projects</h3>
+            </div>
+            <div class="filter-group" id="project-filters" role="toolbar" aria-label="Project category filters"></div>
+          </div>
+          <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+          <p class="archive-empty" id="project-empty" hidden>No projects match the current filter.</p>
+        </div>
+      </div>
+      <div class="constellation-divider shell" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-code">RESEARCH / SIGNALS</p>
+          <h2>A rover pass through the questions I keep coming back to.</h2>
+          <p class="section-intro">
+            Not a publication list. More like the technical terrain I keep exploring.
+          </p>
+        </div>
+
+        <div class="research-rover reveal">
+          <div class="research-rover__header">
+            <div>
+              <p class="featured-header__label">Mars rover exploration</p>
+              <h3>Signals I&rsquo;m following</h3>
+            </div>
+            <div class="orbit-log__controls">
+              <button class="orbit-arrow" type="button" id="research-prev" aria-label="Show previous research topic">←</button>
+              <button class="orbit-arrow" type="button" id="research-next" aria-label="Show next research topic">→</button>
+            </div>
+          </div>
+
+          <div class="rover-scene">
+            <div class="rover-horizon" aria-hidden="true"></div>
+            <div class="rover-track-line" id="rover-track-line" aria-hidden="true"></div>
+            <div class="rover-progress" id="rover-progress" aria-hidden="true">
+              <img class="rover-image" src="assets/rover.png" alt="" onerror="this.style.display='none'; this.nextElementSibling.hidden=false;">
+              <div class="rover-icon" hidden>
+                <span class="rover-wheel rover-wheel--left"></span>
+                <span class="rover-wheel rover-wheel--right"></span>
+              </div>
+            </div>
+
+            <div class="research-track" id="research-track" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="shell">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="section-code">CONTACT / OPEN CHANNEL</p>
+            <h2>Want to talk robotics, software, teaching, or weird creative tools? Open a channel.</h2>
+            <p>
+              Email is the best path in. GitHub and LinkedIn are there if you want the quicker technical version.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:otsukaryan@gmail.com">Email</a>
+            <a class="button button-secondary" href="https://github.com/gtrotsuka" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/gtryan/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-content">
+      <p>&copy; Ryan Otsuka</p>
+      <p>Built with HTML, CSS, and JavaScript</p>
+      <div class="footer-links">
+        <a href="mailto:otsukaryan@gmail.com">Email</a>
+        <a href="https://github.com/gtrotsuka" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/gtryan/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
