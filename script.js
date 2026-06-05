@@ -1177,6 +1177,32 @@ function renderResearch() {
   `;
 }
 
+function getCurrentTranslateX(element) {
+  if (!element) {
+    return 0;
+  }
+
+  const computedTransform = window.getComputedStyle(element).transform;
+  if (!computedTransform || computedTransform === "none") {
+    return 0;
+  }
+
+  try {
+    const matrix = new DOMMatrixReadOnly(computedTransform);
+    return Number.isFinite(matrix.m41) ? matrix.m41 : 0;
+  } catch {
+    const match = computedTransform.match(/matrix(?:3d)?\((.+)\)/);
+    if (!match) {
+      return 0;
+    }
+    const values = match[1].split(",").map((value) => Number.parseFloat(value.trim()));
+    if (computedTransform.startsWith("matrix3d(")) {
+      return Number.isFinite(values[12]) ? values[12] : 0;
+    }
+    return Number.isFinite(values[4]) ? values[4] : 0;
+  }
+}
+
 function setActiveResearch(index) {
   const cards = [...document.querySelectorAll(".research-card")];
   const viewport = document.querySelector("#research-viewport");
@@ -1220,12 +1246,22 @@ function setActiveResearch(index) {
       spacerEnd.style.flexBasis = `${sideSpace}px`;
     }
     window.cancelAnimationFrame(researchLayoutFrame);
-    researchLayoutFrame = 0;
+    researchLayoutFrame = window.requestAnimationFrame(() => {
+      const measuredActiveCard = cards[researchIndex];
+      if (!measuredActiveCard) {
+        return;
+      }
 
-    const viewportCenter = viewport.offsetWidth / 2;
-    const activeCardCenter = activeCard.offsetLeft + (activeCard.offsetWidth / 2);
-    const translateX = viewportCenter - activeCardCenter;
-    row.style.transform = `translate3d(${translateX}px, 0, 0)`;
+      const viewportRect = viewport.getBoundingClientRect();
+      const activeRect = measuredActiveCard.getBoundingClientRect();
+      const currentTrackX = getCurrentTranslateX(row);
+      const viewportCenter = viewportRect.left + (viewportRect.width / 2);
+      const activeCenter = activeRect.left + (activeRect.width / 2);
+      const correction = viewportCenter - activeCenter;
+      const nextTrackX = currentTrackX + correction;
+      row.style.transform = `translate3d(${nextTrackX}px, 0, 0)`;
+      researchLayoutFrame = 0;
+    });
 
     if (rover && line) {
       const progress = cards.length > 1
