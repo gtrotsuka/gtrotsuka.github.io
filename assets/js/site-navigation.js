@@ -26,14 +26,14 @@
 
   let isNavigating = false;
 
-  window.navigateToAppRoute = function navigateToAppRoute(href) {
+  window.navigateToAppRoute = function navigateToAppRoute(href, options) {
     const route = getRouteFromHref(href);
 
     if (!route || isNavigating) {
       return false;
     }
 
-    transitionToRoute(route, true);
+    transitionToRoute(route, true, options || {});
     return true;
   };
 
@@ -55,7 +55,9 @@
       return;
     }
 
-    if (!window.navigateToAppRoute(link.getAttribute("href"))) {
+    const shouldPreserveScroll = !!link.closest("#nav .links");
+
+    if (!window.navigateToAppRoute(link.getAttribute("href"), { preserveScroll: shouldPreserveScroll })) {
       return;
     }
 
@@ -152,22 +154,28 @@
     }
   }
 
-  function transitionToRoute(route, pushState) {
+  function transitionToRoute(route, pushState, options) {
     const main = document.getElementById("main");
+    const preserveScroll = options && options.preserveScroll;
 
     if (!main) {
       return;
     }
 
     isNavigating = true;
-    smoothScrollToContent(main);
+
+    if (!preserveScroll) {
+      smoothScrollToContent(main);
+    }
 
     main.classList.add("is-page-transitioning-out");
 
     window.setTimeout(function () {
       try {
         renderRoute(route, pushState);
-        smoothScrollToContent(main);
+        if (!preserveScroll) {
+          smoothScrollToContent(main);
+        }
       } finally {
         main.classList.remove("is-page-transitioning-out");
         main.classList.add("is-page-transitioning-in");
