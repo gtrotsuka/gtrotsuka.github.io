@@ -1,0 +1,458 @@
+window.PORTFOLIO_PROJECTS = [
+  {
+    slug: "yjsp",
+    category: "projects",
+    title: "Bang Bang Controller Module",
+    subtitle: "Yellow Jacket Space Program",
+    date: "August 2022 - Present",
+    summary:
+      "The unexplored aspect of space is what makes it interesting. To support my ambition, I am working on the bang bang controller module for Georgia Tech's Space program working on becoming the first collegiate branch to make a liquid fueled rocket reach space.",
+    image: "images/pic011.PNG",
+    imageAlt: "Yellow Jacket Space Program controller module preview",
+    page: 1,
+    featured: true,
+    sections: [
+      {
+        heading: "What is the Yellow Jacket Space Program?",
+        paragraphs: [
+          "YJSP is Georgia Tech's collegiate rocketry team working toward becoming the first collegiate branch to send a liquid-fueled rocket to space.",
+          "The team recently launched Darcy I and is now focused on new subscale and fullscale rocket efforts."
+        ]
+      },
+      {
+        heading: "What I work on",
+        paragraphs: [
+          "I work on the bang-bang control module for the subscale team.",
+          "The system regulates pressure in the liquid oxygen and Jet-A fuel tanks by opening and closing valves fed from a 7000 PSI nitrogen tank, using launch-day pressure targets from the ground control GUI."
+        ]
+      }
+    ],
+    skills: ["Rust", "Agile Methodology", "C++"],
+    gallery: []
+  },
+  {
+    slug: "robonav",
+    category: "projects",
+    title: "Mars Rover Software Development",
+    subtitle: "Georgia Tech Robojackets",
+    date: "August 2022 - May 2023",
+    summary:
+      "I served as a software team member on Georgia Tech's Robojackets Robonav subteam and worked on rover arm elements for the team.",
+    image: "images/pic021.PNG",
+    imageAlt: "Mars rover software development preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is Robonav?",
+        paragraphs: [
+          "Robonav is a division of Georgia Tech's Robojackets focused on the University Rover Challenge, where teams build rovers that can traverse terrain, analyze samples, scan surroundings, and more.",
+          "The design for that season also included a drone element for autonomous checkpoint navigation."
+        ]
+      },
+      {
+        heading: "How I contributed",
+        paragraphs: [
+          "I worked with the robot arms team while also learning CMake and ROS2 so I could contribute more broadly on the software side.",
+          "At the time, the team was waiting on CAD models from mechanical, so I used that gap to ramp up on the stack."
+        ]
+      }
+    ],
+    skills: ["CMake", "ROS2", "Robot Arms", "C++"],
+    gallery: []
+  },
+  {
+    slug: "warehouse-sim",
+    category: "projects",
+    title: "Warehouse Simulation",
+    subtitle: "Python Project",
+    date: "August 2023 - December 2023",
+    summary:
+      "Implementing a frontier-based exploration and a marker collection stage with a calibrated PID controller.",
+    image: "images/warehouse_thumb.PNG",
+    imageAlt: "Warehouse simulation preview",
+    page: 1,
+    sections: [
+      {
+        heading: "Frontier exploration",
+        paragraphs: [
+          "This project was split into two parts. The first used frontier-based exploration so the robot could discover its surroundings and find markers that represented warehouse packages.",
+          "The robot used RRT and frontier calculations to move through unexplored cells until every marker had been located."
+        ]
+      },
+      {
+        heading: "Marker collection",
+        paragraphs: [
+          "In the second part, the robot reused the known marker locations from the first stage and navigated to each one with the correct orientation for pickup.",
+          "The collection algorithm repeatedly chose the closest marker, planned around obstacles with RRT, and continued until all markers were collected."
+        ]
+      }
+    ],
+    skills: ["Python", "Frontier Planning", "Path Planning", "RRT"],
+    gallery: [
+      {
+        src: "images/warehouse_frontier.PNG",
+        alt: "Warehouse frontier exploration visualization"
+      }
+    ]
+  },
+  {
+    slug: "marine",
+    category: "projects",
+    title: "LIDAR, IMU, and GPS Data Processing",
+    subtitle: "Marine Robotics",
+    date: "August 2022 - Present",
+    summary:
+      "Autonomous boats are so cool. This competition-ready boat takes in its surroundings using LIDAR to process automated commands and complete tasks like proceeding through buoys.",
+    image: "images/pic041.jpg",
+    imageAlt: "Marine robotics preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is Marine Robotics?",
+        paragraphs: [
+          "Marine Robotics is Georgia Tech's marine robotics team, building competition-ready autonomous boats.",
+          "At the time of this project, the team was preparing for competition in Australia and looking ahead to RoboBoat, where a smaller boat would complete tasks using a similar LIDAR-driven setup."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked with the software lead to better understand the electrical and software architecture behind the mini-PC, router, and full boat communication system.",
+          "Even though the overall setup was complex, the role gave me a path to gradually start contributing to the full autonomy stack."
+        ]
+      }
+    ],
+    skills: ["LIDAR", "IMU", "GPS", "Autonomy"],
+    gallery: []
+  },
+  {
+    slug: "solar",
+    category: "projects",
+    title: "Controller for Motor Controller Circuit Board",
+    subtitle: "Solar Racing",
+    date: "August 2022 - Present",
+    summary:
+      "A solar-powered car engineered for efficiency in competition, with work focused on the motor controller circuit board.",
+    image: "images/pic051.jpg",
+    imageAlt: "Solar racing preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is Solar Racing?",
+        paragraphs: [
+          "Solar Racing is Georgia Tech's competitive solar car team.",
+          "The team builds both the vehicle and the ground-control system that predicts race conditions and helps the driver manage speed, turns, braking, and energy use."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked on refactoring code for the MC squared board, the motor controller controller.",
+          "That PCB interprets signals from the car and produces the motor outputs used to drive the wheels."
+        ]
+      }
+    ],
+    skills: ["Embedded Systems", "Refactoring", "PCB Software"],
+    gallery: []
+  },
+  {
+    slug: "hyperloop",
+    category: "projects",
+    title: "Battery Management System and Ground Control",
+    subtitle: "GT Hyperloop",
+    date: "August 2022 - Present",
+    summary:
+      "Competing against teams around the world, these pods racing through near-vacuum tunnels make real strides in transportation.",
+    image: "images/pic061.PNG",
+    imageAlt: "GT Hyperloop preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is GT Hyperloop?",
+        paragraphs: [
+          "GT Hyperloop is Georgia Tech's hyperloop team, designing pods for vacuum-environment competition.",
+          "The team competes in events like the Canadian Hyperloop Conference and European Hyperloop Week."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked with Ground Control on radio-based communication between Arduinos so data could be transmitted from the ground station to the vehicle.",
+          "I also supported microcontroller work while learning the platform in more depth."
+        ]
+      }
+    ],
+    skills: ["Arduino", "Ground Control", "Radio Communication", "Microcontrollers"],
+    gallery: []
+  },
+  {
+    slug: "ramen-go",
+    category: "projects",
+    title: "Ramen Go",
+    subtitle: "Full-Stack Web Development",
+    date: "January 2023 - May 2023",
+    summary:
+      "Collaborating on a web recreation of the card game Sushi Go.",
+    image: "images/sushi_thumb.PNG",
+    imageAlt: "Ramen Go web app preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is the Ramen Go project?",
+        paragraphs: [
+          "Ramen Go is a multiplayer web recreation of Sushi Go, including turn logic, unique card effects, and persistent game state.",
+          "We also built a lobby system, socket rooms, and MongoDB-backed infrastructure to support multiple players and multiple games."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked mainly on the front end, the UI design, core game logic, the turn system, and the lobby system.",
+          "I also implemented socket rooms and the game ID system so players could create and join separate lobbies."
+        ]
+      }
+    ],
+    skills: ["React", "MongoDB", "Git"],
+    gallery: [
+      {
+        src: "images/sushi_card_hand.PNG",
+        alt: "Ramen Go card hand UI"
+      },
+      {
+        src: "images/sushi_menu.PNG",
+        alt: "Ramen Go menu screen"
+      },
+      {
+        src: "images/sushi_cards.PNG",
+        alt: "Ramen Go card layout"
+      }
+    ]
+  },
+  {
+    slug: "group-planning",
+    category: "projects",
+    title: "Group Planning",
+    subtitle: "Full-Stack Web Development",
+    date: "August 2023 - December 2023",
+    summary:
+      "Creating a website for planning group events utilizing Google's OAuth and MongoDB.",
+    image: "images/group_thumb.PNG",
+    imageAlt: "Group planning preview",
+    page: 2,
+    featured: true,
+    sections: [
+      {
+        heading: "What is the Group Planning project?",
+        paragraphs: [
+          "This project was designed to help people plan group activities with invites, calendar-aware scheduling, and activity coordination."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked on the invite page and the MongoDB database setup, and I also helped in other areas of the product as needed."
+        ]
+      }
+    ],
+    skills: ["React", "MongoDB"],
+    gallery: []
+  },
+  {
+    slug: "stormalytics",
+    category: "projects",
+    title: "Hurricane Tracking and Web Development",
+    subtitle: "Stormalytics",
+    date: "January 2023 - May 2023",
+    summary:
+      "Building a more user-friendly hurricane tracking experience with a public-facing GUI.",
+    image: "images/pic031.PNG",
+    imageAlt: "Stormalytics preview",
+    page: 2,
+    sections: [
+      {
+        heading: "What is the Stormalytics project?",
+        paragraphs: [
+          "Stormalytics is a graduate-student-led project focused on improving storm tracking."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked on the functionality and logic of a storm-tracking database, including data filtering and turning raw information into a readable format."
+        ]
+      }
+    ],
+    skills: ["C++", "Agile", "Git"],
+    gallery: []
+  },
+  {
+    slug: "gtxr",
+    category: "projects",
+    title: "Kendeda AR Development",
+    subtitle: "Georgia Tech Extended Reality",
+    date: "August 2022 - May 2023",
+    summary:
+      "I worked on an AR interactive experience in Georgia Tech's Kendeda building.",
+    image: "images/pic071.jpg",
+    imageAlt: "Extended reality preview",
+    page: 2,
+    sections: [
+      {
+        heading: "What is GT Extended Reality?",
+        paragraphs: [
+          "GTXR is a project-based program where I worked on an experience centered on Georgia Tech's Kendeda building, known for its zero-energy, zero-water, and zero-waste design."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "My goal was to use Unity to make walking through the building more interactive, with landmark-based text and animations that explain the building's sustainable systems.",
+          "I worked closely with more advanced students to help build out that experience."
+        ]
+      }
+    ],
+    skills: ["Unity", "AR", "Interactive Design"],
+    gallery: []
+  },
+  {
+    slug: "image-recognition",
+    category: "projects",
+    title: "Image Recognition",
+    subtitle: "Python Project",
+    date: "August 2023 - December 2023",
+    summary:
+      "Utilizing RANSAC and a Canny edge detector to compare Cozmo grayscale images against a fixed recognition set.",
+    image: "images/image_thumb.PNG",
+    imageAlt: "Image recognition preview",
+    page: 2,
+    sections: [
+      {
+        heading: "Image recognition project",
+        paragraphs: [
+          "Using a training set and wall data, I built an image classification pipeline for seven known images plus a none-of-the-above class.",
+          "The main tools I implemented were a Canny edge detector and RANSAC, and the extracted image features became a key part of the recognition process."
+        ]
+      }
+    ],
+    skills: ["Python", "RANSAC", "Canny Edge Detection"],
+    gallery: [
+      {
+        src: "images/image_extract_features.PNG",
+        alt: "Image feature extraction output"
+      }
+    ]
+  },
+  {
+    slug: "mcts",
+    category: "research",
+    title: "MCTS Flight Simulation Research",
+    subtitle: "",
+    date: "August 2023 - Present",
+    summary:
+      "Working with 6DOF and JSBSim to simulate F16 planes and compare planes running MCTS with planes running a pure pursuit algorithm.",
+    image: "images/mcts_2d.PNG",
+    imageAlt: "MCTS flight simulation preview",
+    featured: true,
+    sections: [
+      {
+        heading: "MCTS research overview",
+        paragraphs: [
+          "I am specifically researching a 2v1 multi-agent 6DOF setup with two agents and one adversary.",
+          "The simulations compare configured MCTS-controlled agents against an adversary running a pure pursuit algorithm, with the goal of improving MCTS performance in combat scenarios."
+        ]
+      },
+      {
+        heading: "Fall semester focus",
+        paragraphs: [
+          "During the fall, I concentrated on reward weighting and health weighting.",
+          "The final reward approach combined damage, positional reward, and energy reward, while health weighting opened up questions about sustainability and long-term behavior that I planned to keep exploring."
+        ]
+      }
+    ],
+    skills: ["MCTS", "6DOF", "JSBSim", "Python"],
+    gallery: []
+  },
+  {
+    slug: "particle-filter",
+    category: "research",
+    title: "Particle Filter Research",
+    subtitle: "",
+    date: "August 2023 - December 2023",
+    summary:
+      "Takes a robot odometry measurement as a motion control input and a marker measurement as a sensor input. Used 5000 particles to estimate a global optimum.",
+    image: "images/particle_thumb.PNG",
+    imageAlt: "Particle filter visualization",
+    sections: [
+      {
+        heading: "Particle filter details",
+        paragraphs: [
+          "This project explored particle filters by matching a set of randomly generated particles to the robot's odometry and movement.",
+          "Each particle's estimate represented a possible robot location, and the system iteratively refined the match between those candidates and the real marker observations."
+        ]
+      }
+    ],
+    skills: ["Python", "Particle Filters"],
+    gallery: []
+  },
+  {
+    slug: "pid-controller",
+    category: "research",
+    title: "PID Controller Research",
+    subtitle: "",
+    date: "August 2023 - December 2023",
+    summary:
+      "Tuning a linear and angular PID controller for a robot driving along a thin icy path while accounting for slide and noisy stopping behavior.",
+    image: "images/pid_thumb.PNG",
+    imageAlt: "PID controller simulation preview",
+    sections: [
+      {
+        heading: "PID research overview",
+        paragraphs: [
+          "I applied PID control to a scenario where a robot slides on an icy road even when the wheels stop turning.",
+          "The project focused on fine-tuning stopping behavior by accounting for target distance and reversing wheel inputs under noise until the robot came to a full stop. I also studied how the controller counteracted disturbances like strong wind."
+        ]
+      }
+    ],
+    skills: ["Python", "PID"],
+    gallery: [
+      {
+        src: "images/pid_straight.PNG",
+        alt: "PID controller straight path result"
+      }
+    ]
+  },
+  {
+    slug: "rrt-planning",
+    category: "research",
+    title: "RRT Planning Simulation",
+    subtitle: "",
+    date: "August 2023 - December 2023",
+    summary:
+      "Designing a node generator to navigate a robot through obstacles in real time with RRT, plus path smoothing to reduce unnecessary nodes.",
+    image: "images/rrt_thumb.PNG",
+    imageAlt: "RRT planning preview",
+    sections: [
+      {
+        heading: "RRT research overview",
+        paragraphs: [
+          "This project explored how randomly generated nodes can create a viable path for a robot moving around obstacles and walls.",
+          "RRT was used to guide a robot through a course from start to finish while respecting its footprint."
+        ]
+      },
+      {
+        heading: "Improving the model",
+        paragraphs: [
+          "I also built path smoothing to reduce the number of nodes between the start and end states.",
+          "That process attempted to connect distant nodes when no collision existed, reducing path complexity and producing faster routes."
+        ]
+      }
+    ],
+    skills: ["Python", "RRT", "Path Planning"],
+    gallery: [
+      {
+        src: "images/rrt_path.PNG",
+        alt: "RRT path smoothing result"
+      }
+    ]
+  }
+];
