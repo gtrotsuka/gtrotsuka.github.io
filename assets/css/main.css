@@ -4547,6 +4547,12 @@ input, select, textarea {
 		text-align: left;
 	}
 
+	#project-neighbor-links .page {
+		min-width: 8.5rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
 	#main.is-page-transitioning-out {
 		pointer-events: none;
 	}

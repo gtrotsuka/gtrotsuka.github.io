@@ -1,5 +1,53 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    slug: "safran-passenger-innovations",
+    category: "work",
+    title: "Software Engineering Intern",
+    subtitle: "Safran Passenger Innovations",
+    date: "Internship Experience",
+    summary:
+      "Safran Passenger Innovations works on in-flight entertainment for airlines, and I worked as a software engineering intern completing coding tickets across a range of different projects in Jira and Confluence.",
+    image: "images/pic08.jpg",
+    imageAlt: "Safran Passenger Innovations work experience preview",
+    featured: true,
+    sections: [
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I interned at Safran Passenger Innovations as a software engineering intern. They work on in-flight entertainment for airlines, and I worked to accomplish a lot of coding tickets on Jira and Confluence that ranged across a lot of different projects.",
+          "In general, I worked in a small team, had a mentor, and was able to work mostly independently to complete tickets in a timely manner while also attending weekly team meetings as well as some cross-functional engineering standup meetings to provide progress updates, collaborate with senior and staff engineers, and validate feature implementation and bug fixes."
+        ]
+      },
+      {
+        heading: "Closed captioning and media player work",
+        paragraphs: [
+          "I first contributed to closed captioning subtitle support in C++ for in-flight entertainment systems by extending the existing QT/QML media player pipeline to have subtitle metadata and playback synchronization."
+        ]
+      },
+      {
+        heading: "Bug fixes and validation",
+        paragraphs: [
+          "For another ticket, I resolved a screen rollover bug. I coordinated directly with external software teams to validate and affirm the fix while ensuring compatibility across multiple deployment environments as a whole."
+        ]
+      },
+      {
+        heading: "UI, data flow, and tooling",
+        paragraphs: [
+          "For another ticket, I developed UI and data flow improvements in QML to support a new map overlay system to propagate navigation and map data across different screen views.",
+          "For another ticket, I made a bash installation script for an airline content deployment set to streamline its configuration and reduce the manual setup needed for system integration."
+        ]
+      },
+      {
+        heading: "Documentation",
+        paragraphs: [
+          "For another 2 tickets, I wrote documentation for existing systems. I had to learn how documentation was written and write in C++ some documentation on currently undocumented code and functions."
+        ]
+      }
+    ],
+    skills: ["C++", "QT/QML", "QML", "Bash", "Jira", "Confluence"],
+    gallery: []
+  },
+  {
     slug: "yjsp",
     category: "projects",
     title: "Bang Bang Controller Module",
