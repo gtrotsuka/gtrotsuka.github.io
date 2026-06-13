@@ -4,7 +4,7 @@ window.PORTFOLIO_PROJECTS = [
     category: "work",
     title: "Software Engineering Intern",
     subtitle: "Safran Passenger Innovations",
-    date: "Internship Experience",
+    date: "June 2025 - August 2025",
     summary:
       "Safran Passenger Innovations works on in-flight entertainment for airlines, and I worked as a software engineering intern completing coding tickets across a range of different projects in Jira and Confluence.",
     image: "images/pic08.jpg",
@@ -21,7 +21,7 @@ window.PORTFOLIO_PROJECTS = [
       {
         heading: "Closed captioning and media player work",
         paragraphs: [
-          "I first contributed to closed captioning subtitle support in C++ for in-flight entertainment systems by extending the existing QT/QML media player pipeline to have subtitle metadata and playback synchronization."
+          "My first ticket was contributing to closed captioning subtitle support in C++ for in-flight entertainment systems by extending the existing QT/QML media player pipeline to have subtitle metadata and playback synchronization."
         ]
       },
       {
@@ -45,6 +45,141 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["C++", "QT/QML", "QML", "Bash", "Jira", "Confluence"],
+    gallery: []
+  },
+  {
+    slug: "cs1100-head-ta",
+    category: "work",
+    title: "Head TA for CS 1100",
+    subtitle: "Georgia Tech",
+    date: "August 2024 - Present",
+    summary:
+      "I am currently a Head TA for CS 1100 at Georgia Tech, where I lead TA teams, manage course operations and student engagement, and develop new programs, lectures, assignments, and career-exploration initiatives to improve the early computer science student experience.",
+    image: "images/pic06.jpg",
+    imageAlt: "Georgia Tech CS 1100 head TA work experience preview",
+    sections: [
+      {
+        heading: "What I do",
+        paragraphs: [
+          "This is the main job I have currently, from August 2024 to Present. I am a Head TA for CS 1100 at Georgia Tech.",
+          "I have led and mentored TA teams of various sizes ranging from 10-20 to implement new student engagement programs, strengthen early mentorship connections with students, and improve the early computer science student experience."
+        ]
+      },
+      {
+        heading: "Course operations and student engagement",
+        paragraphs: [
+          "As the core role, I manage the course operations and student engagement by coordinating with the professor, monitoring student progress, adapting course content to evolving student needs, and overseeing grading and communication between all TAs."
+        ]
+      },
+      {
+        heading: "Building the TA team and course content",
+        paragraphs: [
+          "I carefully interview and handpick TAs to build the best team for the semester.",
+          "I also constantly work on developing new lectures, assignments, and career-exploration initiatives to better integrate computing discovery with professional development and improve the course to be more informative and helpful as a whole."
+        ]
+      },
+      {
+        heading: "Initiatives I created",
+        paragraphs: [
+          "Some of the biggest initiatives I created are TA-led workshops and TA families, where TAs have more direct communication with students to host small-group gatherings and work on a project together, talk about their future, or teach an interesting subject that they may be interested in or come across in the future."
+        ]
+      },
+      {
+        heading: "Ongoing work and current challenge",
+        paragraphs: [
+          "I work year round to constantly improve the course, understand the changing student population, and more.",
+          "The recent challenge has been AI and finding the balance between using AI as a tool and preventing an overreliance on AI as a whole."
+        ]
+      }
+    ],
+    skills: ["Leadership", "Mentorship", "Course Operations", "Student Engagement", "Lecture Development", "Professional Development"],
+    gallery: []
+  },
+  {
+    slug: "vivet-inc",
+    category: "work",
+    title: "IT Intern",
+    subtitle: "Vivet Inc.",
+    date: "May 2024 - August 2024",
+    summary:
+      "I was an IT intern at Vivet Inc. from May 2024 to August 2024, where I worked on SQL-based email domain filtering, AI and computer vision discussions, UI/UX research, user-data analysis, and email campaign strategy.",
+    image: "images/pic09.jpg",
+    imageAlt: "Vivet Inc. work experience preview",
+    sections: [
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I was an IT Intern for Vivet Inc. from May 2024 to August 2024.",
+          "I worked across data, AI-related discussions, UI/UX research, and customer-facing platform strategy."
+        ]
+      },
+      {
+        heading: "SQL and email domain filtering",
+        paragraphs: [
+          "I used SQL to create an email domain blacklist for corresponding business teams by creating new queries and tables for acceptable email domains."
+        ]
+      },
+      {
+        heading: "AI censorship and computer vision",
+        paragraphs: [
+          "Additionally, I had weekly meetings addressing AI censorship and computer vision as I learned LLM tactics for developing AI tools and identifying how to tune models for various business purposes."
+        ]
+      },
+      {
+        heading: "UI/UX research and ordering flow",
+        paragraphs: [
+          "I did a lot of UI/UX research to propose user experience changes throughout the main webpage, ranging from the company-facing side to the user-facing side and including the entire ordering process."
+        ]
+      },
+      {
+        heading: "User data and campaign strategy",
+        paragraphs: [
+          "I analyzed user data to identify the best strategy to convert clicks on the webpage into sales.",
+          "I also worked with email messaging platforms to identify how we can best launch campaigns and ensure the reach to customers is as high as possible."
+        ]
+      }
+    ],
+    skills: ["SQL", "UI/UX Research", "LLMs", "Computer Vision", "User Data Analysis", "Email Campaigns"],
+    gallery: []
+  },
+  {
+    slug: "robin-martin-associates",
+    category: "work",
+    title: "Web Dev Intern",
+    subtitle: "Robin Martin and Associates",
+    date: "May 2024 - August 2024",
+    summary:
+      "I was a web dev intern for Robin Martin and Associates from May 2024 to August 2024, where I worked heavily on the main webpage, rebuilt parts of the experience with React, focused on SEO, and created a longer-form video marketing strategy to drive more traffic and leads.",
+    image: "images/pic07.jpg",
+    imageAlt: "Robin Martin and Associates work experience preview",
+    sections: [
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I had another work experience as a web dev intern for Robin Martin and Associates from May 2024 to August 2024.",
+          "I worked a ton on their main webpage, which was originally in WordPress, to reduce the clicks needed to convert sales."
+        ]
+      },
+      {
+        heading: "Website development and React",
+        paragraphs: [
+          "I also used the React framework to better build the website and allow for better customizability and control over how the website can be utilized to generate leads and convert sales."
+        ]
+      },
+      {
+        heading: "SEO and search ranking",
+        paragraphs: [
+          "I focused a lot on SEO and increased the business's search rankings by 9 ranks."
+        ]
+      },
+      {
+        heading: "Marketing strategy",
+        paragraphs: [
+          "In addition to this, I created a new marketing strategy in longer-form videos to generate attention and sales, drive more traffic to the website, and create more leads."
+        ]
+      }
+    ],
+    skills: ["React", "WordPress", "SEO", "Lead Generation", "UI/UX", "Marketing Strategy"],
     gallery: []
   },
   {
