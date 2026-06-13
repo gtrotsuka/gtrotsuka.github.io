@@ -1,7 +1,7 @@
 window.initProjectDetail = function initProjectDetail() {
   const projects = window.PORTFOLIO_PROJECTS || [];
   const params = new URLSearchParams(window.location.search);
-  const slug = params.get("slug");
+  const slug = document.body.dataset.projectSlug || params.get("slug");
   const project = projects.find(function (item) {
     return item.slug === slug;
   });
@@ -54,11 +54,7 @@ window.initProjectDetail = function initProjectDetail() {
     logo.href = categoryHref;
   }
 
-  if (navWork && navProjects && navResearch) {
-    navWork.className = isWork ? "active" : "";
-    navProjects.className = !isResearch && !isWork ? "active" : "";
-    navResearch.className = isResearch ? "active" : "";
-  }
+  updateActiveNav();
 
   detail.innerHTML =
     '<article class="post">' +
@@ -109,6 +105,33 @@ window.initProjectDetail = function initProjectDetail() {
 
   function getProjectUrl(projectSlug) {
     return "project.html?slug=" + encodeURIComponent(projectSlug);
+  }
+
+  function updateActiveNav() {
+    if (navWork && navProjects && navResearch) {
+      navWork.className = isWork ? "active" : "";
+      navProjects.className = !isResearch && !isWork ? "active" : "";
+      navResearch.className = isResearch ? "active" : "";
+      return;
+    }
+
+    const navItems = document.querySelectorAll("#nav .links li");
+
+    navItems.forEach(function (item) {
+      item.classList.remove("active");
+    });
+
+    if (isWork && navItems[0]) {
+      navItems[0].classList.add("active");
+    }
+
+    if (!isResearch && !isWork && navItems[1]) {
+      navItems[1].classList.add("active");
+    }
+
+    if (isResearch && navItems[2]) {
+      navItems[2].classList.add("active");
+    }
   }
 
   function renderSections(sections) {

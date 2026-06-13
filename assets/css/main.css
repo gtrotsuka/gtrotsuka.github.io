@@ -4490,6 +4490,11 @@ input, select, textarea {
 		padding-bottom: 0;
 	}
 
+	#main > .project-back-row + #project-detail {
+		border-top: 0;
+		padding-top: 1.5rem;
+	}
+
 	.project-content-section {
 		margin: 0 0 3rem 0;
 	}

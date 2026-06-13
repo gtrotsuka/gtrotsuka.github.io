@@ -12,13 +12,13 @@ window.initProjectsPage = function initProjectsPage() {
   const featuredContainer = document.getElementById("featured-project");
   const gridContainer = document.getElementById("projects-grid");
   const paginationContainer = document.getElementById("projects-pagination");
-  const main = document.getElementById("main");
+  const navList = document.querySelector("#nav .links");
 
-  if ((!featuredContainer && !gridContainer && !paginationContainer) || !main) {
+  if (!featuredContainer && !gridContainer && !paginationContainer) {
     return;
   }
 
-  bindListingNavigation();
+  bindIndicatorResize();
 
   if (!categoryProjects.length) {
     renderEmptyState();
@@ -248,159 +248,15 @@ window.initProjectsPage = function initProjectsPage() {
     }
   }
 
-  function bindListingNavigation() {
-    if (document.body.dataset.listingNavigationBound === "true") {
+  function bindIndicatorResize() {
+    if (!navList || document.body.dataset.navIndicatorResizeBound === "true") {
       return;
     }
 
-    document.body.dataset.listingNavigationBound = "true";
-
-    document.addEventListener("click", function (event) {
-      const link = event.target.closest(
-        '#nav .links a, #projects-pagination a, .portfolio-page-switcher a'
-      );
-
-      if (!link) {
-        return;
-      }
-
-      const route = getListingRoute(link.getAttribute("href"));
-
-      if (!route) {
-        return;
-      }
-
-      event.preventDefault();
-      transitionToRoute(route);
-    });
-
-    window.addEventListener("popstate", function () {
-      const route = getListingRoute(window.location.pathname.split("/").pop() || "index.html");
-
-      if (!route) {
-        return;
-      }
-
-      applyRoute(route, false);
-    });
-
+    document.body.dataset.navIndicatorResizeBound = "true";
     window.addEventListener("resize", function () {
       window.requestAnimationFrame(updateListingNavIndicator);
     });
-  }
-
-  function getListingRoute(href) {
-    if (!href || href.indexOf("project.html") === 0) {
-      return null;
-    }
-
-    switch (href) {
-      case "index.html":
-        return {
-          category: "work",
-          page: 1,
-          url: "index.html",
-          title: "Ryan Otsuka"
-        };
-      case "projects.html":
-        return {
-          category: "projects",
-          page: 1,
-          url: "projects.html",
-          title: "Ryan Otsuka"
-        };
-      case "page2.html":
-        return {
-          category: "projects",
-          page: 2,
-          url: "page2.html",
-          title: "Ryan Otsuka"
-        };
-      case "generic.html":
-        return {
-          category: "research",
-          page: 1,
-          url: "generic.html",
-          title: "Ryan Otsuka"
-        };
-      default:
-        return null;
-    }
-  }
-
-  function transitionToRoute(route) {
-    if (document.body.dataset.routeTransitioning === "true") {
-      return;
-    }
-
-    document.body.dataset.routeTransitioning = "true";
-    main.classList.add("is-page-transitioning-out");
-
-    window.setTimeout(function () {
-      try {
-        applyRoute(route, true);
-        main.classList.remove("is-page-transitioning-out");
-        main.classList.add("is-page-transitioning-in");
-
-        window.requestAnimationFrame(function () {
-          window.requestAnimationFrame(function () {
-            main.classList.remove("is-page-transitioning-in");
-            document.body.dataset.routeTransitioning = "false";
-          });
-        });
-      } catch (error) {
-        document.body.dataset.routeTransitioning = "false";
-        main.classList.remove("is-page-transitioning-out");
-        main.classList.remove("is-page-transitioning-in");
-      }
-    }, 150);
-  }
-
-  function applyRoute(route, pushState) {
-    document.body.dataset.listingCategory = route.category;
-    document.body.dataset.projectsPage = String(route.page);
-
-    if (route.category === "work") {
-      document.body.dataset.emptyTitle = "Work Experience";
-      document.body.dataset.emptyMessage = "Experience highlights will appear here soon.";
-    } else {
-      document.body.removeAttribute("data-empty-title");
-      document.body.removeAttribute("data-empty-message");
-    }
-
-    document.title = route.title;
-    updateListingNav(route);
-    window.initProjectsPage();
-
-    if (pushState) {
-      try {
-        window.history.pushState({}, "", route.url);
-      } catch (error) {
-        // Local file browsing can reject pushState; rendering should still continue.
-      }
-    }
-  }
-
-  function updateListingNav(route) {
-    const navLinks = document.querySelectorAll("#nav .links li");
-
-    navLinks.forEach(function (item) {
-      item.classList.remove("active");
-    });
-
-    if (route.category === "work" && navLinks[0]) {
-      navLinks[0].classList.add("active");
-    }
-
-    if (route.category === "projects" && navLinks[1]) {
-      navLinks[1].classList.add("active");
-    }
-
-    if (route.category === "research" && navLinks[2]) {
-      navLinks[2].classList.add("active");
-    }
-
-    window.requestAnimationFrame(updateListingNavIndicator);
   }
 
   function updateListingNavIndicator() {
