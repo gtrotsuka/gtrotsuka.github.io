@@ -214,69 +214,180 @@ window.PORTFOLIO_PROJECTS = [
     gallery: []
   },
   {
-    slug: "robonav",
+    slug: "emotional-politics",
     category: "projects",
-    title: "Mars Rover Software Development",
-    subtitle: "Georgia Tech Robojackets",
-    date: "August 2022 - May 2023",
+    title: "Emotional and Rhetorical Expression in Online Politics",
+    subtitle: "Social Computing",
+    date: "January 2026 - May 2026",
     summary:
-      "I served as a software team member on Georgia Tech's Robojackets Robonav subteam and worked on rover arm elements for the team.",
-    image: "images/pic021.PNG",
-    imageAlt: "Mars rover software development preview",
+      "A social computing project analyzing Reddit political communities with LLM filtering, GoEmotions, VADER, and LIWC to study emotional expression, rhetorical framing, and how online political groups discussed the war in the Middle East.",
+    image: "images/pic03.jpg",
+    imageAlt: "Emotional and rhetorical expression in online politics project preview",
     page: 1,
     sections: [
       {
-        heading: "What is Robonav?",
+        heading: "What the project studied",
         paragraphs: [
-          "Robonav is a division of Georgia Tech's Robojackets focused on the University Rover Challenge, where teams build rovers that can traverse terrain, analyze samples, scan surroundings, and more.",
-          "The design for that season also included a drone element for autonomous checkpoint navigation."
+          "This project looked at the discussions taking place in online political communities on Reddit and treated subreddit spaces as a more behind-closed-doors form of political discussion.",
+          "We focused on a representative sample of subreddits across the political aisle and used the ongoing war in the Middle East as a controlled discussion topic so we could compare how different communities reacted to the same general event."
         ]
       },
       {
-        heading: "How I contributed",
+        heading: "Data collection and filtering",
         paragraphs: [
-          "I worked with the robot arms team while also learning CMake and ROS2 so I could contribute more broadly on the software side.",
-          "At the time, the team was waiting on CAD models from mechanical, so I used that gap to ramp up on the stack."
+          "We scraped posts and comments from 10 subreddits across the political spectrum and collected 10,703 posts with 55,294 comments.",
+          "To make the comparisons fairer, we used an LLM model through Ollama as a classification system to filter discussions down to posts and comments pertaining to ongoing geopolitical conflicts in the Middle East, leaving 2,248 posts and 11,051 comments. We also validated the classifier with a manual sample and measured 98% accuracy, 92% precision, and 100% recall."
+        ]
+      },
+      {
+        heading: "How we analyzed it",
+        paragraphs: [
+          "We separated posts and comments because posts are often more about prompts or headlines while comments are more about user interactions, and comments ended up being the stronger place for emotional expression.",
+          "The analysis used GoEmotions for 28 fine-grained emotions, VADER for broad sentiment, and LIWC for linguistic and rhetorical framing, along with non-parametric statistical tests to compare ideological groups and subreddit-level behavior."
+        ]
+      },
+      {
+        heading: "What we found",
+        paragraphs: [
+          "The biggest finding was that politically opposed Reddit communities were more similar than polarization narratives suggest. Broad sentiment around the Middle Eastern war tended to converge across ideological lines, even though rhetorical framing and emphasis still differed.",
+          "We found patterns like right-leaning posters using more 'we' framing, different communities emphasizing religion, money, or policy approval in different ways, and subreddit culture shaping expression in ways that ideology alone did not fully explain."
         ]
       }
     ],
-    skills: ["CMake", "ROS2", "Robot Arms", "C++"],
+    skills: ["Social Computing", "LLMs", "Sentiment Analysis", "GoEmotions", "VADER", "LIWC"],
     gallery: []
   },
   {
-    slug: "warehouse-sim",
+    slug: "khan-academy-edtech-redesign",
     category: "projects",
-    title: "Warehouse Simulation",
-    subtitle: "Python Project",
-    date: "August 2023 - December 2023",
+    title: "Khan Academy EdTech Redesign",
+    subtitle: "Education Technology",
+    date: "January 2026 - May 2026",
     summary:
-      "Implementing a frontier-based exploration and a marker collection stage with a calibrated PID controller.",
-    image: "images/warehouse_thumb.PNG",
-    imageAlt: "Warehouse simulation preview",
+      "A Spring 2026 education technology redesign project focused on improving Khan Academy for English learners and immigrant students through iterative Figma prototyping, UI design principles, and contextual inquiry.",
+    image: "images/pic01.jpg",
+    imageAlt: "Khan Academy education technology redesign project preview",
     page: 1,
     sections: [
       {
-        heading: "Frontier exploration",
+        heading: "Project focus",
         paragraphs: [
-          "This project was split into two parts. The first used frontier-based exploration so the robot could discover its surroundings and find markers that represented warehouse packages.",
-          "The robot used RRT and frontier calculations to move through unexplored cells until every marker had been located."
+          "This project redesigned parts of Khan Academy to better support English learners and immigrant students while still fitting into Khan Academy's simple but nuanced interface.",
+          "The work centered on building features that reduce language inequality and support learning without making the existing site feel cluttered or disconnected from its current design system."
         ]
       },
       {
-        heading: "Marker collection",
+        heading: "Features we designed",
         paragraphs: [
-          "In the second part, the robot reused the known marker locations from the first stage and navigated to each one with the correct orientation for pickup.",
-          "The collection algorithm repeatedly chose the closest marker, planned around obstacles with RRT, and continued until all markers were collected."
+          "The redesign included four main features: intermediary lessons, an AI study buddy, community learning, and community role models.",
+          "Together, these features were meant to support vocabulary learning, question asking, cultural and community explanation, and access to helpful role models and resources without forcing students into disruptive context switching."
+        ]
+      },
+      {
+        heading: "Design process and iteration",
+        paragraphs: [
+          "We worked through multiple levels of fidelity in Figma and used contextual inquiry, prior user testing, and UI design principles to keep iterating on the experience.",
+          "A major part of the process was figuring out how to integrate new features into an already detailed platform without adding too much clutter, while still making interactive elements visible and easy to understand."
+        ]
+      },
+      {
+        heading: "What we learned",
+        paragraphs: [
+          "Some of the biggest lessons were around consistency, discoverability, recognition over recall, user control, and making it obvious what is interactive. We updated things like text entry affordances, highlight behavior, suggested prompts, filtering, trust signals, and how additional information was introduced.",
+          "One of the clearest takeaways was that keeping the design neat was not enough by itself. We had to balance visibility and usability so the features could actually be noticed, understood, and used naturally inside the Khan Academy workflow."
         ]
       }
     ],
-    skills: ["Python", "Frontier Planning", "Path Planning", "RRT"],
-    gallery: [
+    skills: ["Figma", "UI/UX Design", "Contextual Inquiry", "Education Technology", "User Testing", "Design Iteration"],
+    gallery: []
+  },
+  {
+    slug: "shape-machine-search",
+    category: "projects",
+    title: "BFS and DFS in Shape Machine",
+    subtitle: "Shape Grammars Project",
+    date: "August 2025 - December 2025",
+    summary:
+      "A project exploring how BFS and DFS can be represented procedurally inside Shape Machine by turning mazes into node-edge structures and using visual rule sets for expansion, path finding, and backtracking.",
+    image: "images/pic05.jpg",
+    imageAlt: "BFS and DFS in Shape Machine project preview",
+    page: 1,
+    sections: [
       {
-        src: "images/warehouse_frontier.PNG",
-        alt: "Warehouse frontier exploration visualization"
+        heading: "Project idea",
+        paragraphs: [
+          "This project investigated how fundamental search algorithms can be broken down and represented in the rule-based framework of Shape Machine.",
+          "The goal was to bridge algorithms with visual computation by embedding BFS and DFS into a very visual-based scripting language so algorithmic procedure could be expressed through shape rules instead of conventional code structures."
+        ]
+      },
+      {
+        heading: "Maze preprocessing and graph setup",
+        paragraphs: [
+          "Given a maze, we first ran a preprocessing step that turned the maze into a familiar node-edge pattern, where corridors acted like edges and intersections acted like nodes.",
+          "That let us treat the maze like a graph and use Shape Machine rules to determine whether neighbors existed, whether a point had been visited, and how points should be recolored according to the current algorithm."
+        ]
+      },
+      {
+        heading: "BFS and DFS implementations",
+        paragraphs: [
+          "For BFS, we built one script that expanded outward from the first node and colored each level to visualize traversal, then a second script that backtracked from the end of the maze to the start to identify the shortest path.",
+          "For DFS, the implementation traversed as far as possible until it hit a dead end, colored dead ends orange, backtracked when no neighbors existed, and then continued until it found the goal. This also showed the classic difference that DFS does not guarantee the shortest path while BFS does."
+        ]
+      },
+      {
+        heading: "Extensions and applications",
+        paragraphs: [
+          "As an extension, we integrated Python as a metacontrol layer for Shape Machine so we could control DFS rule firing frequency and step counts and observe different traversal variations on the same maze.",
+          "We also explored possible future applications including weighted pathfinding and max-flow style optimization, a floorplan rating system based on room-to-room distances, and explainable AI path planning for robotics."
+        ]
       }
-    ]
+    ],
+    skills: ["BFS", "DFS", "Shape Grammars", "Python", "Visual Computation", "Path Planning"],
+    gallery: []
+  },
+  {
+    slug: "robot-trust-errors",
+    category: "projects",
+    title: "Human Trust After Household Robot Errors",
+    subtitle: "Human-Robot Interaction Research",
+    date: "August 2025 - December 2025",
+    summary:
+      "A human-robot interaction study on how different household robot errors affect trust, using a between-subjects experiment to compare restriction violations, reversible mistakes, and irreversible damage scenarios.",
+    image: "images/pic02.jpg",
+    imageAlt: "Household robot trust study project preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What the project studied",
+        paragraphs: [
+          "This study investigated how different types of household robot errors affect human trust as assistive robots become more common in real-world environments.",
+          "We focused on physical interaction failures instead of only social interaction failures and categorized robot mistakes by increasing severity: restriction errors, reversible errors, and irreversible errors."
+        ]
+      },
+      {
+        heading: "Research design",
+        paragraphs: [
+          "The project used a between-subjects experiment with 62 participants to establish baseline trust from successful task completions and then measure how trust changed after different robot failure scenarios.",
+          "We also looked at whether participants would be willing to let the robot complete similar tasks again in the future, and analyzed how factors like age and familiarity with assistive robots affected the drop in trust."
+        ]
+      },
+      {
+        heading: "What we found",
+        paragraphs: [
+          "Contrary to the hypothesis that irreversible errors would cause the greatest trust loss, the study found no significant difference between error types. Instead, any error significantly reduced trust compared to perfect performance, with an average trust drop of 1.54 points, or about a 30% decrease.",
+          "The findings suggest a threshold effect in trust evaluation, where the presence of a mistake mattered more than the exact type of mistake."
+        ]
+      },
+      {
+        heading: "Key takeaways",
+        paragraphs: [
+          "A few especially interesting patterns emerged, including a U-shaped relationship between robot experience and trust loss, where intermediate users showed the highest disappointment, and a senior paradox where elderly participants lost the most trust but were still the most willing to use the robot.",
+          "Qualitatively, participants emphasized consistency, transparency, safety, and error recovery. One major takeaway was that users cared deeply about whether the robot followed instructions and respected constraints, meaning compliance and communication may matter more than avoiding one specific type of error."
+        ]
+      }
+    ],
+    skills: ["Human-Robot Interaction", "User Studies", "Trust Analysis", "Experimental Design", "Data Analysis", "Assistive Robotics"],
+    gallery: []
   },
   {
     slug: "marine",
@@ -306,36 +417,6 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["LIDAR", "IMU", "GPS", "Autonomy"],
-    gallery: []
-  },
-  {
-    slug: "solar",
-    category: "projects",
-    title: "Controller for Motor Controller Circuit Board",
-    subtitle: "Solar Racing",
-    date: "August 2022 - Present",
-    summary:
-      "A solar-powered car engineered for efficiency in competition, with work focused on the motor controller circuit board.",
-    image: "images/pic051.jpg",
-    imageAlt: "Solar racing preview",
-    page: 1,
-    sections: [
-      {
-        heading: "What is Solar Racing?",
-        paragraphs: [
-          "Solar Racing is Georgia Tech's competitive solar car team.",
-          "The team builds both the vehicle and the ground-control system that predicts race conditions and helps the driver manage speed, turns, braking, and energy use."
-        ]
-      },
-      {
-        heading: "What I worked on",
-        paragraphs: [
-          "I worked on refactoring code for the MC squared board, the motor controller controller.",
-          "That PCB interprets signals from the car and produces the motor outputs used to drive the wheels."
-        ]
-      }
-    ],
-    skills: ["Embedded Systems", "Refactoring", "PCB Software"],
     gallery: []
   },
   {
@@ -369,6 +450,188 @@ window.PORTFOLIO_PROJECTS = [
     gallery: []
   },
   {
+    slug: "solar",
+    category: "projects",
+    title: "Controller for Motor Controller Circuit Board",
+    subtitle: "Solar Racing",
+    date: "August 2022 - Present",
+    summary:
+      "A solar-powered car engineered for efficiency in competition, with work focused on the motor controller circuit board.",
+    image: "images/pic051.jpg",
+    imageAlt: "Solar racing preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is Solar Racing?",
+        paragraphs: [
+          "Solar Racing is Georgia Tech's competitive solar car team.",
+          "The team builds both the vehicle and the ground-control system that predicts race conditions and helps the driver manage speed, turns, braking, and energy use."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked on refactoring code for the MC squared board, the motor controller controller.",
+          "That PCB interprets signals from the car and produces the motor outputs used to drive the wheels."
+        ]
+      }
+    ],
+    skills: ["Embedded Systems", "Refactoring", "PCB Software"],
+    gallery: []
+  },
+  {
+    slug: "flood-risk-predictor",
+    category: "projects",
+    title: "Flood Risk Predictor",
+    subtitle: "Machine Learning Project",
+    date: "August 2024 - December 2024",
+    summary:
+      "A machine learning project focused on flood prediction by combining weather and climate data, preprocessing it with interpolation, PCA, and normalization, and using models like LSTM to classify flood and no-flood events.",
+    image: "images/pic04.jpg",
+    imageAlt: "Flood risk predictor project preview",
+    page: 1,
+    sections: [
+      {
+        heading: "Project goal",
+        paragraphs: [
+          "Flooding is a destructive force for communities, and because of the amount of climate and weather data available, it can be difficult for humans to interpret that data to predict flooding.",
+          "This project focused on building a flood risk predictor by compiling different types of weather and climate data and using machine learning to classify flood and no-flood events."
+        ]
+      },
+      {
+        heading: "Data and preprocessing",
+        paragraphs: [
+          "The project drew from sources like Georgia rainfall indicator data and FEMA flood insurance information to capture features tied to rainfall, flood location, and flood extent.",
+          "To prepare the dataset, we removed unwanted features, filled in missing data points through interpolation, used principal component analysis to reduce dimensionality while preserving variance, and normalized the data so no single feature would dominate due to scale differences."
+        ]
+      },
+      {
+        heading: "Models and approach",
+        paragraphs: [
+          "We planned to analyze the data using LSTMs, SVMs, and random forest models, since each has different strengths for flood prediction.",
+          "The main implemented model was an LSTM, which fit the time-series nature of the dataset well because it captured long-term dependencies across predictors like base flood elevation, lowest floor elevation, cause of damage, and precipitation."
+        ]
+      },
+      {
+        heading: "Results",
+        paragraphs: [
+          "After running the LSTM on the dataset, we achieved very high accuracy. The model predicted no-flood events with 97% accuracy and flood events with 99% accuracy.",
+          "The confusion matrix also showed strong performance, correctly identifying no-flood events 96.93% of the time and flood events 99.49% of the time. Tuning analysis suggested that somewhere between 10 and 15 time steps produced the best results."
+        ]
+      }
+    ],
+    skills: ["Machine Learning", "LSTM", "PCA", "Data Preprocessing", "Time Series", "Flood Prediction"],
+    gallery: []
+  },
+  {
+    slug: "nutritional-ai",
+    category: "projects",
+    title: "Nutritional AI",
+    subtitle: "AI-Powered Meal Planning App",
+    date: "January 2025 - May 2025",
+    summary:
+      "An AI-powered mobile app concept for helping students cook affordable, nutritious meals by scanning grocery receipts, tracking ingredients, and generating safe recipe suggestions from what they already have.",
+    image: "images/pic09.jpg",
+    imageAlt: "Nutritional AI project preview",
+    page: 1,
+    sections: [
+      {
+        heading: "Project goal",
+        paragraphs: [
+          "This project aimed to help college students balance their budget with their diet by making it easier to cook affordable, nutritious meals with ingredients they already had.",
+          "The broader goal was to reduce food waste, simplify meal planning, and make home-cooked meals more accessible for students with busy schedules and tight finances."
+        ]
+      },
+      {
+        heading: "Core system idea",
+        paragraphs: [
+          "The app was designed around two core flows: receipt scanning and recipe generation.",
+          "Using OCR, the system would extract ingredient data from grocery receipts, clean and standardize item names with custom heuristics and NLP-style processing, and store everything in a user-specific inventory so ingredients could be tracked without manual input."
+        ]
+      },
+      {
+        heading: "AI recipe generation and safety",
+        paragraphs: [
+          "For recipe generation, the idea was to use an LLM such as Gemini or GPT together with recipe data from sources like NYTimes Cooking to recommend personalized meals based on what the user already bought.",
+          "A major part of the project was thinking carefully about AI safety. The system was meant to heavily censor unsafe recipe suggestions, avoid dangerous or unrealistic outputs, and act as a teaching tool for novice cooks by giving practical guidance like how to check whether chicken is fully cooked or how to adjust flavor."
+        ]
+      },
+      {
+        heading: "Inventory and meal planning",
+        paragraphs: [
+          "The project also focused on real-time inventory monitoring so the app could track leftover ingredients, detect missing items, suggest substitutions, and recommend meals before ingredients expired.",
+          "That would help users save money, avoid duplicate purchases, reduce waste, and still get recipe suggestions that match nutritional goals, dietary restrictions, and personal preferences."
+        ]
+      }
+    ],
+    skills: ["OCR", "LLMs", "Swift", "NLP", "Recipe Generation", "Inventory Tracking"],
+    gallery: []
+  },
+  {
+    slug: "group-planning",
+    category: "projects",
+    title: "Group Planning",
+    subtitle: "Full-Stack Web Development",
+    date: "August 2023 - December 2023",
+    summary:
+      "Creating a website for planning group events utilizing Google's OAuth and MongoDB.",
+    image: "images/group_thumb.PNG",
+    imageAlt: "Group planning preview",
+    page: 1,
+    sections: [
+      {
+        heading: "What is the Group Planning project?",
+        paragraphs: [
+          "This project was designed to help people plan group activities with invites, calendar-aware scheduling, and activity coordination."
+        ]
+      },
+      {
+        heading: "What I worked on",
+        paragraphs: [
+          "I worked on the invite page and the MongoDB database setup, and I also helped in other areas of the product as needed."
+        ]
+      }
+    ],
+    skills: ["React", "MongoDB"],
+    gallery: []
+  },
+  {
+    slug: "warehouse-sim",
+    category: "projects",
+    title: "Warehouse Simulation",
+    subtitle: "Python Project",
+    date: "August 2023 - December 2023",
+    summary:
+      "Implementing a frontier-based exploration and a marker collection stage with a calibrated PID controller.",
+    image: "images/warehouse_thumb.PNG",
+    imageAlt: "Warehouse simulation preview",
+    page: 2,
+    featured: true,
+    sections: [
+      {
+        heading: "Frontier exploration",
+        paragraphs: [
+          "This project was split into two parts. The first used frontier-based exploration so the robot could discover its surroundings and find markers that represented warehouse packages.",
+          "The robot used RRT and frontier calculations to move through unexplored cells until every marker had been located."
+        ]
+      },
+      {
+        heading: "Marker collection",
+        paragraphs: [
+          "In the second part, the robot reused the known marker locations from the first stage and navigated to each one with the correct orientation for pickup.",
+          "The collection algorithm repeatedly chose the closest marker, planned around obstacles with RRT, and continued until all markers were collected."
+        ]
+      }
+    ],
+    skills: ["Python", "Frontier Planning", "Path Planning", "RRT"],
+    gallery: [
+      {
+        src: "images/warehouse_frontier.PNG",
+        alt: "Warehouse frontier exploration visualization"
+      }
+    ]
+  },
+  {
     slug: "ramen-go",
     category: "projects",
     title: "Ramen Go",
@@ -378,7 +641,7 @@ window.PORTFOLIO_PROJECTS = [
       "Collaborating on a web recreation of the card game Sushi Go.",
     image: "images/sushi_thumb.PNG",
     imageAlt: "Ramen Go web app preview",
-    page: 1,
+    page: 2,
     sections: [
       {
         heading: "What is the Ramen Go project?",
@@ -412,33 +675,32 @@ window.PORTFOLIO_PROJECTS = [
     ]
   },
   {
-    slug: "group-planning",
+    slug: "image-recognition",
     category: "projects",
-    title: "Group Planning",
-    subtitle: "Full-Stack Web Development",
+    title: "Image Recognition",
+    subtitle: "Python Project",
     date: "August 2023 - December 2023",
     summary:
-      "Creating a website for planning group events utilizing Google's OAuth and MongoDB.",
-    image: "images/group_thumb.PNG",
-    imageAlt: "Group planning preview",
+      "Utilizing RANSAC and a Canny edge detector to compare Cozmo grayscale images against a fixed recognition set.",
+    image: "images/image_thumb.PNG",
+    imageAlt: "Image recognition preview",
     page: 2,
-    featured: true,
     sections: [
       {
-        heading: "What is the Group Planning project?",
+        heading: "Image recognition project",
         paragraphs: [
-          "This project was designed to help people plan group activities with invites, calendar-aware scheduling, and activity coordination."
-        ]
-      },
-      {
-        heading: "What I worked on",
-        paragraphs: [
-          "I worked on the invite page and the MongoDB database setup, and I also helped in other areas of the product as needed."
+          "Using a training set and wall data, I built an image classification pipeline for seven known images plus a none-of-the-above class.",
+          "The main tools I implemented were a Canny edge detector and RANSAC, and the extracted image features became a key part of the recognition process."
         ]
       }
     ],
-    skills: ["React", "MongoDB"],
-    gallery: []
+    skills: ["Python", "RANSAC", "Canny Edge Detection"],
+    gallery: [
+      {
+        src: "images/image_extract_features.PNG",
+        alt: "Image feature extraction output"
+      }
+    ]
   },
   {
     slug: "stormalytics",
@@ -469,6 +731,36 @@ window.PORTFOLIO_PROJECTS = [
     gallery: []
   },
   {
+    slug: "robonav",
+    category: "projects",
+    title: "Mars Rover Software Development",
+    subtitle: "Georgia Tech Robojackets",
+    date: "August 2022 - May 2023",
+    summary:
+      "I served as a software team member on Georgia Tech's Robojackets Robonav subteam and worked on rover arm elements for the team.",
+    image: "images/pic021.PNG",
+    imageAlt: "Mars rover software development preview",
+    page: 2,
+    sections: [
+      {
+        heading: "What is Robonav?",
+        paragraphs: [
+          "Robonav is a division of Georgia Tech's Robojackets focused on the University Rover Challenge, where teams build rovers that can traverse terrain, analyze samples, scan surroundings, and more.",
+          "The design for that season also included a drone element for autonomous checkpoint navigation."
+        ]
+      },
+      {
+        heading: "How I contributed",
+        paragraphs: [
+          "I worked with the robot arms team while also learning CMake and ROS2 so I could contribute more broadly on the software side.",
+          "At the time, the team was waiting on CAD models from mechanical, so I used that gap to ramp up on the stack."
+        ]
+      }
+    ],
+    skills: ["CMake", "ROS2", "Robot Arms", "C++"],
+    gallery: []
+  },
+  {
     slug: "gtxr",
     category: "projects",
     title: "Kendeda AR Development",
@@ -496,34 +788,6 @@ window.PORTFOLIO_PROJECTS = [
     ],
     skills: ["Unity", "AR", "Interactive Design"],
     gallery: []
-  },
-  {
-    slug: "image-recognition",
-    category: "projects",
-    title: "Image Recognition",
-    subtitle: "Python Project",
-    date: "August 2023 - December 2023",
-    summary:
-      "Utilizing RANSAC and a Canny edge detector to compare Cozmo grayscale images against a fixed recognition set.",
-    image: "images/image_thumb.PNG",
-    imageAlt: "Image recognition preview",
-    page: 2,
-    sections: [
-      {
-        heading: "Image recognition project",
-        paragraphs: [
-          "Using a training set and wall data, I built an image classification pipeline for seven known images plus a none-of-the-above class.",
-          "The main tools I implemented were a Canny edge detector and RANSAC, and the extracted image features became a key part of the recognition process."
-        ]
-      }
-    ],
-    skills: ["Python", "RANSAC", "Canny Edge Detection"],
-    gallery: [
-      {
-        src: "images/image_extract_features.PNG",
-        alt: "Image feature extraction output"
-      }
-    ]
   },
   {
     slug: "mcts",
