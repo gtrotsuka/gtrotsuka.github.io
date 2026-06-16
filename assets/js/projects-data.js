@@ -7,8 +7,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "June 2025 - August 2025",
     summary:
       "Safran Passenger Innovations works on in-flight entertainment for airlines, and I worked as a software engineering intern completing coding tickets across a range of different projects in Jira and Confluence.",
-    image: "images/pic08.jpg",
-    imageAlt: "Safran Passenger Innovations work experience preview",
+    image: "images/Safran_Title.png",
+    imageAlt: "Safran Passenger Innovations work experience preview graphic",
     featured: true,
     sections: [
       {
@@ -45,7 +45,13 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["C++", "QT/QML", "QML", "Bash", "Jira", "Confluence"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/Safran_Title.png",
+        alt: "Safran Passenger Innovations work experience graphic",
+        caption: "Preview image for the Safran Passenger Innovations software engineering internship."
+      }
+    ]
   },
   {
     slug: "cs1100-head-ta",
@@ -55,8 +61,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "August 2024 - Present",
     summary:
       "I am currently a Head TA for CS 1100 at Georgia Tech, where I lead TA teams, manage course operations and student engagement, and develop new programs, lectures, assignments, and career-exploration initiatives to improve the early computer science student experience.",
-    image: "images/pic06.jpg",
-    imageAlt: "Georgia Tech CS 1100 head TA work experience preview",
+    image: "images/gt_title.jpg",
+    imageAlt: "Georgia Tech CS 1100 head TA work experience preview graphic",
     sections: [
       {
         heading: "What I do",
@@ -93,7 +99,13 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["Leadership", "Mentorship", "Course Operations", "Student Engagement", "Lecture Development", "Professional Development"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/gt_title.jpg",
+        alt: "Georgia Tech CS 1100 head TA work experience graphic",
+        caption: "Preview image for the Georgia Tech CS 1100 head TA role."
+      }
+    ]
   },
   {
     slug: "vivet-inc",
@@ -103,8 +115,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "May 2024 - August 2024",
     summary:
       "I was an IT intern at Vivet Inc. from May 2024 to August 2024, where I worked on SQL-based email domain filtering, AI and computer vision discussions, UI/UX research, user-data analysis, and email campaign strategy.",
-    image: "images/pic09.jpg",
-    imageAlt: "Vivet Inc. work experience preview",
+    image: "images/vivet_title.jpg",
+    imageAlt: "Vivet Inc. work experience preview graphic",
     sections: [
       {
         heading: "What I worked on",
@@ -140,7 +152,13 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["SQL", "UI/UX Research", "LLMs", "Computer Vision", "User Data Analysis", "Email Campaigns"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/vivet_title.jpg",
+        alt: "Vivet Inc. work experience graphic",
+        caption: "Preview image for the Vivet Inc. IT internship."
+      }
+    ]
   },
   {
     slug: "robin-martin-associates",
@@ -150,8 +168,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "May 2024 - August 2024",
     summary:
       "I was a web dev intern for Robin Martin and Associates from May 2024 to August 2024, where I worked heavily on the main webpage, rebuilt parts of the experience with React, focused on SEO, and created a longer-form video marketing strategy to drive more traffic and leads.",
-    image: "images/pic07.jpg",
-    imageAlt: "Robin Martin and Associates work experience preview",
+    image: "images/rma_title.png",
+    imageAlt: "Robin Martin and Associates work experience preview graphic",
     sections: [
       {
         heading: "What I worked on",
@@ -180,7 +198,13 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["React", "WordPress", "SEO", "Lead Generation", "UI/UX", "Marketing Strategy"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/rma_title.png",
+        alt: "Robin Martin and Associates work experience graphic",
+        caption: "Preview image for the Robin Martin and Associates web development internship."
+      }
+    ]
   },
   {
     slug: "yjsp",
@@ -221,8 +245,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "January 2026 - May 2026",
     summary:
       "A social computing project analyzing Reddit political communities with LLM filtering, GoEmotions, VADER, and LIWC to study emotional expression, rhetorical framing, and how online political groups discussed the war in the Middle East.",
-    image: "images/pic03.jpg",
-    imageAlt: "Emotional and rhetorical expression in online politics project preview",
+    image: "images/Social_results.png",
+    imageAlt: "Social computing project results overview",
     page: 1,
     sections: [
       {
@@ -255,7 +279,63 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["Social Computing", "LLMs", "Sentiment Analysis", "GoEmotions", "VADER", "LIWC"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/social_data snapshot.png",
+        alt: "Snapshot of the social computing project dataset",
+        caption: "Dataset snapshot from the Reddit political community analysis pipeline."
+      },
+      {
+        src: "images/social_validating and refining prior art.png",
+        alt: "Validation and prior-art refinement graphic for the social computing project",
+        caption: "Validation and refinement work used to ground the study design and filtering approach."
+      },
+      {
+        src: "images/Social_comments.png",
+        alt: "Comment-level analysis visualization for the social computing project",
+        caption: "Visualization highlighting the role of comments in the project analysis."
+      },
+      {
+        src: "images/Social_Comments importance.png",
+        alt: "Comments importance analysis for the social computing project",
+        caption: "Evidence that comments carried especially strong analytical signal in the study."
+      },
+      {
+        src: "images/Social_GoEmotions radar.png",
+        alt: "GoEmotions radar chart from the social computing project",
+        caption: "Radar comparison using GoEmotions to profile fine-grained emotional expression."
+      },
+      {
+        src: "images/social_Dominant emotions.png",
+        alt: "Dominant emotions visualization for the social computing project",
+        caption: "Dominant-emotion view across the analyzed political discussion data."
+      },
+      {
+        src: "images/Social_Sentiment over time.png",
+        alt: "Sentiment over time chart for the social computing project",
+        caption: "Sentiment trends over time across the selected communities and discussion windows."
+      },
+      {
+        src: "images/Social_LIWC.png",
+        alt: "LIWC analysis chart for the social computing project",
+        caption: "LIWC-based comparison of rhetorical and linguistic framing patterns."
+      },
+      {
+        src: "images/Social_LIWC 2.png",
+        alt: "Additional LIWC analysis chart for the social computing project",
+        caption: "Second LIWC view showing more detailed framing differences across groups."
+      },
+      {
+        src: "images/Social_MannWhitneyu.png",
+        alt: "Mann-Whitney U statistical analysis graphic for the social computing project",
+        caption: "Non-parametric statistical comparison used to test subgroup differences."
+      },
+      {
+        src: "images/Social_results.png",
+        alt: "Results summary for the social computing project",
+        caption: "High-level project results summarizing emotional and rhetorical findings."
+      }
+    ]
   },
   {
     slug: "khan-academy-edtech-redesign",
@@ -309,8 +389,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "August 2025 - December 2025",
     summary:
       "A project exploring how BFS and DFS can be represented procedurally inside Shape Machine by turning mazes into node-edge structures and using visual rule sets for expansion, path finding, and backtracking.",
-    image: "images/pic05.jpg",
-    imageAlt: "BFS and DFS in Shape Machine project preview",
+    image: "images/Shapes_title.png",
+    imageAlt: "Title graphic for the BFS and DFS in Shape Machine project",
     page: 1,
     sections: [
       {
@@ -343,51 +423,43 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["BFS", "DFS", "Shape Grammars", "Python", "Visual Computation", "Path Planning"],
-    gallery: []
-  },
-  {
-    slug: "robot-trust-errors",
-    category: "projects",
-    title: "Human Trust After Household Robot Errors",
-    subtitle: "Human-Robot Interaction Research",
-    date: "August 2025 - December 2025",
-    summary:
-      "A human-robot interaction study on how different household robot errors affect trust, using a between-subjects experiment to compare restriction violations, reversible mistakes, and irreversible damage scenarios.",
-    image: "images/pic02.jpg",
-    imageAlt: "Household robot trust study project preview",
-    page: 1,
-    sections: [
+    gallery: [
       {
-        heading: "What the project studied",
-        paragraphs: [
-          "This study investigated how different types of household robot errors affect human trust as assistive robots become more common in real-world environments.",
-          "We focused on physical interaction failures instead of only social interaction failures and categorized robot mistakes by increasing severity: restriction errors, reversible errors, and irreversible errors."
-        ]
+        src: "images/Shapes_title.png",
+        alt: "Title graphic introducing the BFS and DFS in Shape Machine project",
+        caption: "Project title and overall framing for the Shape Machine search exploration."
       },
       {
-        heading: "Research design",
-        paragraphs: [
-          "The project used a between-subjects experiment with 62 participants to establish baseline trust from successful task completions and then measure how trust changed after different robot failure scenarios.",
-          "We also looked at whether participants would be willing to let the robot complete similar tasks again in the future, and analyzed how factors like age and familiarity with assistive robots affected the drop in trust."
-        ]
+        src: "images/Shapes_preprocessing shape grammars.png",
+        alt: "Maze preprocessing diagram for the Shape Machine search project",
+        caption: "Preprocessing step that converts the maze into a node-edge representation Shape Machine can reason over."
       },
       {
-        heading: "What we found",
-        paragraphs: [
-          "Contrary to the hypothesis that irreversible errors would cause the greatest trust loss, the study found no significant difference between error types. Instead, any error significantly reduced trust compared to perfect performance, with an average trust drop of 1.54 points, or about a 30% decrease.",
-          "The findings suggest a threshold effect in trust evaluation, where the presence of a mistake mattered more than the exact type of mistake."
-        ]
+        src: "images/Shapes_BFS 1.png",
+        alt: "Initial BFS traversal visualization in Shape Machine",
+        caption: "Breadth-first expansion from the start node, showing how the search grows level by level."
       },
       {
-        heading: "Key takeaways",
-        paragraphs: [
-          "A few especially interesting patterns emerged, including a U-shaped relationship between robot experience and trust loss, where intermediate users showed the highest disappointment, and a senior paradox where elderly participants lost the most trust but were still the most willing to use the robot.",
-          "Qualitatively, participants emphasized consistency, transparency, safety, and error recovery. One major takeaway was that users cared deeply about whether the robot followed instructions and respected constraints, meaning compliance and communication may matter more than avoiding one specific type of error."
-        ]
+        src: "images/Shapes_BFS 2.png",
+        alt: "Additional BFS traversal state in Shape Machine",
+        caption: "A later BFS state with additional frontier growth through the maze graph."
+      },
+      {
+        src: "images/Shapes_BFS backtrack.png",
+        alt: "BFS shortest-path backtracking visualization in Shape Machine",
+        caption: "Backtracking from the goal to recover the shortest path after BFS completes."
+      },
+      {
+        src: "images/Shapes_DFS_Shapes.png",
+        alt: "DFS traversal and dead-end handling visualization in Shape Machine",
+        caption: "Depth-first traversal behavior, including continued expansion, dead ends, and backtracking."
+      },
+      {
+        src: "images/Shapes_Floorplan rating.png",
+        alt: "Floorplan rating extension visualization for the Shape Machine project",
+        caption: "Extension concept applying the same graph-based ideas to room-distance analysis and floorplan evaluation."
       }
-    ],
-    skills: ["Human-Robot Interaction", "User Studies", "Trust Analysis", "Experimental Design", "Data Analysis", "Assistive Robotics"],
-    gallery: []
+    ]
   },
   {
     slug: "marine",
@@ -487,8 +559,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "August 2024 - December 2024",
     summary:
       "A machine learning project focused on flood prediction by combining weather and climate data, preprocessing it with interpolation, PCA, and normalization, and using models like LSTM to classify flood and no-flood events.",
-    image: "images/pic04.jpg",
-    imageAlt: "Flood risk predictor project preview",
+    image: "images/Flood_LSTM.png",
+    imageAlt: "Flood risk predictor model results visualization",
     page: 1,
     sections: [
       {
@@ -521,7 +593,28 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["Machine Learning", "LSTM", "PCA", "Data Preprocessing", "Time Series", "Flood Prediction"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/Flood_flood.png",
+        alt: "Flood event visualization for the flood risk predictor project",
+        caption: "Example flood-related visualization used in the machine learning project context."
+      },
+      {
+        src: "images/Flood_LSTM.png",
+        alt: "LSTM results visualization for the flood risk predictor project",
+        caption: "LSTM model output used to evaluate flood and no-flood prediction performance."
+      },
+      {
+        src: "images/Flood_Random Forest.png",
+        alt: "Random forest results visualization for the flood risk predictor project",
+        caption: "Random forest comparison view for the flood-prediction pipeline."
+      },
+      {
+        src: "images/Flood_SVM.png",
+        alt: "SVM results visualization for the flood risk predictor project",
+        caption: "SVM comparison results from the flood machine learning analysis."
+      }
+    ]
   },
   {
     slug: "nutritional-ai",
@@ -531,8 +624,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "January 2025 - May 2025",
     summary:
       "An AI-powered mobile app concept for helping students cook affordable, nutritious meals by scanning grocery receipts, tracking ingredients, and generating safe recipe suggestions from what they already have.",
-    image: "images/pic09.jpg",
-    imageAlt: "Nutritional AI project preview",
+    image: "images/Recipe_system architecture.png",
+    imageAlt: "Recipe system architecture for the nutritional AI project",
     page: 1,
     sections: [
       {
@@ -565,7 +658,83 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["OCR", "LLMs", "Swift", "NLP", "Recipe Generation", "Inventory Tracking"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/Recipe_system architecture.png",
+        alt: "System architecture diagram for the recipe-focused AI project",
+        caption: "Overall system architecture connecting receipt scanning, pantry tracking, and recipe generation."
+      },
+      {
+        src: "images/Recipe_Receipt scanning.png",
+        alt: "Receipt scanning interface or output for the recipe-focused AI project",
+        caption: "Receipt scanning flow used to turn grocery purchases into structured ingredient data."
+      },
+      {
+        src: "images/Recipe_Receipt scanning code.png",
+        alt: "Receipt scanning code or processing view for the recipe-focused AI project",
+        caption: "Implementation snapshot for the receipt-scanning and extraction pipeline."
+      },
+      {
+        src: "images/Recipe_ingredient matching.png",
+        alt: "Ingredient matching visualization for the recipe-focused AI project",
+        caption: "Ingredient matching logic used to reconcile scanned items with pantry records and recipes."
+      },
+      {
+        src: "images/Recipe_Pantry management.png",
+        alt: "Pantry management view for the recipe-focused AI project",
+        caption: "Pantry-management concept for tracking ingredients and reducing waste."
+      },
+      {
+        src: "images/Recipe_custom ai model preprocessing.png",
+        alt: "Custom AI model preprocessing diagram for the recipe-focused AI project",
+        caption: "Preprocessing flow for the project's custom AI or ranking-related pipeline."
+      },
+      {
+        src: "images/Recipe_Flask Call.png",
+        alt: "Flask call diagram or screenshot for the recipe-focused AI project",
+        caption: "Backend request flow showing application communication with the service layer."
+      },
+      {
+        src: "images/Recipe_AI optimizer.png",
+        alt: "AI optimizer visualization for the recipe-focused AI project",
+        caption: "Optimizer-related view for improving recipe recommendation behavior."
+      },
+      {
+        src: "images/Recipe_Calculate total instantiation.png",
+        alt: "Total instantiation calculation graphic for the recipe-focused AI project",
+        caption: "Computation view used to evaluate the size of generated recommendation possibilities."
+      },
+      {
+        src: "images/Recipe_Calculate complexity for ranking weights.png",
+        alt: "Complexity calculation for ranking weights in the recipe-focused AI project",
+        caption: "Analysis of ranking-weight complexity for recommendation scoring."
+      },
+      {
+        src: "images/Recipe_Recipe rank efficiency.png",
+        alt: "Recipe rank efficiency chart for the recipe-focused AI project",
+        caption: "Efficiency results for the recipe ranking approach."
+      },
+      {
+        src: "images/Recipe_Latency.png",
+        alt: "Latency chart for the recipe-focused AI project",
+        caption: "Latency measurements for the app and recommendation workflow."
+      },
+      {
+        src: "images/Recipe_Hallucinations.png",
+        alt: "Hallucination analysis for the recipe-focused AI project",
+        caption: "Examples and analysis of unsafe or inaccurate recipe-generation behavior."
+      },
+      {
+        src: "images/Recipe_Example hallucination.png",
+        alt: "Example hallucination output for the recipe-focused AI project",
+        caption: "Specific hallucination example used to motivate safety controls."
+      },
+      {
+        src: "images/Recipe_Pickling.png",
+        alt: "Pickling or data persistence graphic for the recipe-focused AI project",
+        caption: "Persistence-related implementation detail from the recipe recommendation pipeline."
+      }
+    ]
   },
   {
     slug: "group-planning",
@@ -788,6 +957,100 @@ window.PORTFOLIO_PROJECTS = [
     ],
     skills: ["Unity", "AR", "Interactive Design"],
     gallery: []
+  },
+  {
+    slug: "robot-trust-errors",
+    category: "research",
+    title: "Human Trust After Household Robot Errors",
+    subtitle: "Human-Robot Interaction Research",
+    date: "August 2025 - December 2025",
+    summary:
+      "A human-robot interaction study on how different household robot errors affect trust, using a between-subjects experiment to compare restriction violations, reversible mistakes, and irreversible damage scenarios.",
+    image: "images/HRI_Comprehensive.png",
+    imageAlt: "Human-robot interaction trust study overview",
+    sections: [
+      {
+        heading: "What the project studied",
+        paragraphs: [
+          "This study investigated how different types of household robot errors affect human trust as assistive robots become more common in real-world environments.",
+          "We focused on physical interaction failures instead of only social interaction failures and categorized robot mistakes by increasing severity: restriction errors, reversible errors, and irreversible errors."
+        ]
+      },
+      {
+        heading: "Research design",
+        paragraphs: [
+          "The project used a between-subjects experiment with 62 participants to establish baseline trust from successful task completions and then measure how trust changed after different robot failure scenarios.",
+          "We also looked at whether participants would be willing to let the robot complete similar tasks again in the future, and analyzed how factors like age and familiarity with assistive robots affected the drop in trust."
+        ]
+      },
+      {
+        heading: "What we found",
+        paragraphs: [
+          "Contrary to the hypothesis that irreversible errors would cause the greatest trust loss, the study found no significant difference between error types. Instead, any error significantly reduced trust compared to perfect performance, with an average trust drop of 1.54 points, or about a 30% decrease.",
+          "The findings suggest a threshold effect in trust evaluation, where the presence of a mistake mattered more than the exact type of mistake."
+        ]
+      },
+      {
+        heading: "Key takeaways",
+        paragraphs: [
+          "A few especially interesting patterns emerged, including a U-shaped relationship between robot experience and trust loss, where intermediate users showed the highest disappointment, and a senior paradox where elderly participants lost the most trust but were still the most willing to use the robot.",
+          "Qualitatively, participants emphasized consistency, transparency, safety, and error recovery. One major takeaway was that users cared deeply about whether the robot followed instructions and respected constraints, meaning compliance and communication may matter more than avoiding one specific type of error."
+        ]
+      }
+    ],
+    skills: ["Human-Robot Interaction", "User Studies", "Trust Analysis", "Experimental Design", "Data Analysis", "Assistive Robotics"],
+    gallery: [
+      {
+        src: "images/HRI_Comprehensive.png",
+        alt: "Comprehensive overview graphic for the household robot trust study",
+        caption: "Overview figure summarizing the HRI study and its trust-analysis framing."
+      },
+      {
+        src: "images/HRI_Stretch the robot from AI2THOR.png",
+        alt: "Stretch robot environment setup for the HRI project",
+        caption: "The AI2-THOR Stretch robot environment used to stage household interaction scenarios."
+      },
+      {
+        src: "images/HRI_Env.png",
+        alt: "Environment visualization for the HRI trust study",
+        caption: "Example household environment used in the robot-error trust study."
+      },
+      {
+        src: "images/HRI_Errors.png",
+        alt: "Robot error types diagram for the HRI trust study",
+        caption: "Visualization of the different robot error categories compared in the experiment."
+      },
+      {
+        src: "images/HRI_Trust.png",
+        alt: "Trust metric visualization for the HRI trust study",
+        caption: "Trust-related results showing how user trust shifted after robot mistakes."
+      },
+      {
+        src: "images/HRI_TRust drop.png",
+        alt: "Trust drop chart for the HRI trust study",
+        caption: "Primary trust-drop view highlighting the effect of failure on participant trust."
+      },
+      {
+        src: "images/HRI_TRust drop 2.png",
+        alt: "Additional trust drop chart for the HRI trust study",
+        caption: "Follow-up trust-drop analysis with a more detailed breakdown."
+      },
+      {
+        src: "images/HRI_Trust Drop 3.png",
+        alt: "Third trust drop chart for the HRI trust study",
+        caption: "Additional comparison showing trust-change patterns across participants or conditions."
+      },
+      {
+        src: "images/HRI_Robot vs self.png",
+        alt: "Robot-versus-self comparison for the HRI trust study",
+        caption: "Comparison between participant judgments of the robot and their own expectations or choices."
+      },
+      {
+        src: "images/HRI_LMER.png",
+        alt: "LMER statistical results for the HRI trust study",
+        caption: "Linear mixed-effects model output used to analyze trust outcomes."
+      }
+    ]
   },
   {
     slug: "mcts",
