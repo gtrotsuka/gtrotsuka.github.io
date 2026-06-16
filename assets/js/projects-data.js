@@ -345,8 +345,8 @@ window.PORTFOLIO_PROJECTS = [
     date: "January 2026 - May 2026",
     summary:
       "A Spring 2026 education technology redesign project focused on improving Khan Academy for English learners and immigrant students through iterative Figma prototyping, UI design principles, and contextual inquiry.",
-    image: "images/pic01.jpg",
-    imageAlt: "Khan Academy education technology redesign project preview",
+    image: "images/Khan_Khan academy.png",
+    imageAlt: "Khan Academy education technology redesign project preview graphic",
     page: 1,
     sections: [
       {
@@ -379,7 +379,38 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     skills: ["Figma", "UI/UX Design", "Contextual Inquiry", "Education Technology", "User Testing", "Design Iteration"],
-    gallery: []
+    gallery: [
+      {
+        src: "images/Khan_Khan academy.png",
+        alt: "Khan Academy redesign overview graphic",
+        caption: "Overview visual for the Khan Academy education technology redesign project."
+      },
+      {
+        src: "images/Khan_Affinity Mapping.png",
+        alt: "Affinity mapping artifact for the Khan Academy redesign",
+        caption: "Affinity-mapping work used to synthesize research insights and identify design opportunities."
+      },
+      {
+        src: "images/Khan_Lofi Intermediary lessons.png",
+        alt: "Low-fidelity intermediary lessons concept for the Khan Academy redesign",
+        caption: "Low-fidelity concept for intermediary lessons aimed at supporting English learners."
+      },
+      {
+        src: "images/Khan_Lofi AI Study Buddy.png",
+        alt: "Low-fidelity AI study buddy concept for the Khan Academy redesign",
+        caption: "Early low-fidelity exploration of the AI study buddy feature."
+      },
+      {
+        src: "images/Khan_Mid FI AI Study Buddy.png",
+        alt: "Mid-fidelity AI study buddy design for the Khan Academy redesign",
+        caption: "Mid-fidelity iteration refining the AI study buddy flow and interface."
+      },
+      {
+        src: "images/Khan_Hifi ai study buddy.png",
+        alt: "High-fidelity AI study buddy design for the Khan Academy redesign",
+        caption: "High-fidelity study buddy prototype showing the more polished final direction."
+      }
+    ]
   },
   {
     slug: "shape-machine-search",
