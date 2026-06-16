@@ -1,5 +1,5 @@
 window.initProjectsPage = function initProjectsPage() {
-  const projects = window.PORTFOLIO_PROJECTS || [];
+  const projects = getOrderedProjects(window.PORTFOLIO_PROJECTS || []);
   const category = document.body.dataset.listingCategory || "projects";
   const pageValue = Number(document.body.dataset.projectsPage || "1");
   const emptyTitle =
@@ -246,6 +246,49 @@ window.initProjectsPage = function initProjectsPage() {
     if (paginationContainer) {
       paginationContainer.innerHTML = "";
     }
+  }
+
+  function getOrderedProjects(items) {
+    const orderMap = window.PORTFOLIO_PROJECT_ORDER || {};
+    const slugPosition = {};
+    let counter = 0;
+
+    Object.keys(orderMap).forEach(function (key) {
+      (orderMap[key] || []).forEach(function (slug) {
+        if (slugPosition[slug] === undefined) {
+          slugPosition[slug] = counter;
+          counter += 1;
+        }
+      });
+    });
+
+    return items
+      .map(function (item, index) {
+        return { item: item, index: index };
+      })
+      .sort(function (left, right) {
+        const leftRank =
+          slugPosition[left.item.slug] === undefined
+            ? Number.MAX_SAFE_INTEGER
+            : slugPosition[left.item.slug];
+        const rightRank =
+          slugPosition[right.item.slug] === undefined
+            ? Number.MAX_SAFE_INTEGER
+            : slugPosition[right.item.slug];
+
+        if (left.item.category !== right.item.category) {
+          return left.index - right.index;
+        }
+
+        if (leftRank !== rightRank) {
+          return leftRank - rightRank;
+        }
+
+        return left.index - right.index;
+      })
+      .map(function (entry) {
+        return entry.item;
+      });
   }
 
   function bindIndicatorResize() {

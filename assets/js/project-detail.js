@@ -1,5 +1,5 @@
 window.initProjectDetail = function initProjectDetail() {
-  const projects = window.PORTFOLIO_PROJECTS || [];
+  const projects = getOrderedProjects(window.PORTFOLIO_PROJECTS || []);
   const params = new URLSearchParams(window.location.search);
   const slug = document.body.dataset.projectSlug || params.get("slug");
   const project = projects.find(function (item) {
@@ -105,6 +105,49 @@ window.initProjectDetail = function initProjectDetail() {
 
   function getProjectUrl(projectSlug) {
     return "project.html?slug=" + encodeURIComponent(projectSlug);
+  }
+
+  function getOrderedProjects(items) {
+    const orderMap = window.PORTFOLIO_PROJECT_ORDER || {};
+    const slugPosition = {};
+    let counter = 0;
+
+    Object.keys(orderMap).forEach(function (key) {
+      (orderMap[key] || []).forEach(function (slug) {
+        if (slugPosition[slug] === undefined) {
+          slugPosition[slug] = counter;
+          counter += 1;
+        }
+      });
+    });
+
+    return items
+      .map(function (item, index) {
+        return { item: item, index: index };
+      })
+      .sort(function (left, right) {
+        const leftRank =
+          slugPosition[left.item.slug] === undefined
+            ? Number.MAX_SAFE_INTEGER
+            : slugPosition[left.item.slug];
+        const rightRank =
+          slugPosition[right.item.slug] === undefined
+            ? Number.MAX_SAFE_INTEGER
+            : slugPosition[right.item.slug];
+
+        if (left.item.category !== right.item.category) {
+          return left.index - right.index;
+        }
+
+        if (leftRank !== rightRank) {
+          return leftRank - rightRank;
+        }
+
+        return left.index - right.index;
+      })
+      .map(function (entry) {
+        return entry.item;
+      });
   }
 
   function updateActiveNav() {

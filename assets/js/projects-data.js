@@ -502,7 +502,7 @@ window.PORTFOLIO_PROJECTS = [
       "Autonomous boats are so cool. This competition-ready boat takes in its surroundings using LIDAR to process automated commands and complete tasks like proceeding through buoys.",
     image: "images/pic041.jpg",
     imageAlt: "Marine robotics preview",
-    page: 1,
+    page: 2,
     sections: [
       {
         heading: "What is Marine Robotics?",
@@ -590,7 +590,7 @@ window.PORTFOLIO_PROJECTS = [
     date: "August 2024 - December 2024",
     summary:
       "A machine learning project focused on flood prediction by combining weather and climate data, preprocessing it with interpolation, PCA, and normalization, and using models like LSTM to classify flood and no-flood events.",
-    image: "images/Flood_LSTM.png",
+    image: "images/Flood_flood.png",
     imageAlt: "Flood risk predictor model results visualization",
     page: 1,
     sections: [
@@ -777,7 +777,7 @@ window.PORTFOLIO_PROJECTS = [
       "Creating a website for planning group events utilizing Google's OAuth and MongoDB.",
     image: "images/group_thumb.PNG",
     imageAlt: "Group planning preview",
-    page: 1,
+    page: 2,
     sections: [
       {
         heading: "What is the Group Planning project?",
@@ -1197,3 +1197,37 @@ window.PORTFOLIO_PROJECTS = [
     ]
   }
 ];
+
+window.PORTFOLIO_PROJECT_ORDER = {
+  work: [
+    "safran-passenger-innovations",
+    "cs1100-head-ta",
+    "robin-martin-associates",
+    "vivet-inc"
+  ],
+  projects: [
+    "yjsp",
+    "emotional-politics",
+    "shape-machine-search",
+    "khan-academy-edtech-redesign",
+    "hyperloop",
+    "nutritional-ai",
+    "flood-risk-predictor",
+    "solar",
+    "warehouse-sim",
+    "marine",
+    "robonav",
+    "group-planning",
+    "image-recognition",
+    "ramen-go",
+    "stormalytics",
+    "gtxr"
+  ],
+  research: [
+    "mcts",
+    "robot-trust-errors",
+    "rrt-planning",
+    "particle-filter",
+    "pid-controller"
+  ]
+};
